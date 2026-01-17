@@ -10,10 +10,9 @@ units:
   starting_x: 0
   starting_y: 0
 
-  # The distance between the Function Row and the Number Row.
-  r0_gap: 0ky
 points:
   zones:
+  # left side
     r2:
       anchor:
         shift: [starting_x, starting_y]
@@ -83,10 +82,67 @@ points:
       anchor:
         shift: [starting_x+5ky, starting_y-3ky]
       key:
-            width: 1.5kx
+        width: 1.5kx
+    
+
+  # right side
+    r2_right:
+      anchor:
+        shift: [starting_x+200, starting_y]
+      columns:
+        y:
+        u:
+        i:
+        o:
+        p:
+        backspace:
+
+
+    r3_right:
+      anchor:
+        shift: [starting_x+200+0.37kx, starting_y-ky]
+      columns:
+        h:
+        j:
+        k:
+        l:
+        colon:
+    
+    r4_right:
+      anchor:
+        shift: [starting_x+197, starting_y-2ky]
+      columns:
+        b:
+        n:
+        m:
+        comma:
+        peroid:
+        up_arrow:
+    
+    r5_right:
+      anchor:
+        shift: [starting_x+216+2kx, starting_y-3ky]
+      columns:
+        left_arrow:
+        down_arrow:
+        right_arrow:
+    
+    thumbfan_right:
+      anchor:
+        shift: [starting_x+202+1ky, starting_y-3ky]
+      key:
+        width: 1.5kx
+  
+  # right side far right column
+    # right_side_column:
+    #   anchor:
+    #     shift: [starting_x+314, starting_y]
+    #   columns:
+    #     backspace:
+        
 
 
 
-  mirror:
-    ref: r2_t
-    distance: 100
+
+
+        

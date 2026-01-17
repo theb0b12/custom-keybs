@@ -5,7 +5,6 @@ units:
     $default_height: u
     starting_x: 0
     starting_y: 0
-    r0_gap: 0ky
 points:
     zones:
         r2:
@@ -98,6 +97,54 @@ points:
                     - starting_y-3ky
             key:
                 width: 1.5kx
-    mirror:
-        ref: r2_t
-        distance: 100
+        r2_right:
+            anchor:
+                shift:
+                    - starting_x+200
+                    - starting_y
+            columns:
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+        r3_right:
+            anchor:
+                shift:
+                    - starting_x+200+0.37kx
+                    - starting_y-ky
+            columns:
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+        r4_right:
+            anchor:
+                shift:
+                    - starting_x+197
+                    - starting_y-2ky
+            columns:
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+        r5_right:
+            anchor:
+                shift:
+                    - starting_x+216+2kx
+                    - starting_y-3ky
+            columns:
+                left_arrow: null
+                down_arrow: null
+                right_arrow: null
+        thumbfan_right:
+            anchor:
+                shift:
+                    - starting_x+202+1ky
+                    - starting_y-3ky
+            key:
+                width: 1.5kx

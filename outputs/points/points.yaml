@@ -52,7 +52,6 @@ r2_tab:
             rows: {}
             name: tab
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -109,7 +108,6 @@ r2_q:
             rows: {}
             name: q
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -165,7 +163,6 @@ r2_w:
             key: {}
             name: w
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -221,7 +218,6 @@ r2_e:
             key: {}
             name: e
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -277,7 +273,6 @@ r2_r:
             key: {}
             name: r
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -333,7 +328,6 @@ r2_t:
             key: {}
             name: t
         row: default
-        mirrored: false
         bind:
             - 0
             - 0
@@ -393,7 +387,6 @@ r3_caps:
             rows: {}
             name: caps
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -450,7 +443,6 @@ r3_a:
             rows: {}
             name: a
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -506,7 +498,6 @@ r3_s:
             key: {}
             name: s
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -562,7 +553,6 @@ r3_d:
             key: {}
             name: d
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -618,7 +608,6 @@ r3_f:
             key: {}
             name: f
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -674,7 +663,6 @@ r3_g:
             key: {}
             name: g
         row: default
-        mirrored: false
         bind:
             - 0
             - 0
@@ -734,7 +722,6 @@ r4_lshift:
             rows: {}
             name: lshift
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -791,7 +778,6 @@ r4_z:
             rows: {}
             name: z
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -847,7 +833,6 @@ r4_x:
             key: {}
             name: x
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -903,7 +888,6 @@ r4_c:
             key: {}
             name: c
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -959,7 +943,6 @@ r4_v:
             key: {}
             name: v
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -1015,7 +998,6 @@ r4_b:
             key: {}
             name: b
         row: default
-        mirrored: false
         bind:
             - 0
             - 0
@@ -1084,7 +1066,6 @@ r5_lctrl:
             rows: {}
             name: lctrl
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -1154,7 +1135,6 @@ r5_lalt:
             rows: {}
             name: lalt
         row: default
-        mirrored: false
         bind:
             - 0
             - 10
@@ -1224,7 +1204,6 @@ r5_lcmd:
             rows: {}
             name: lcmd
         row: default
-        mirrored: false
         bind:
             - 0
             - 0
@@ -1269,16 +1248,15 @@ thumbfan:
             key: {}
             name: default
         row: default
-        mirrored: false
         bind:
             - 0
             - 0
             - 0
             - 0
-mirror_r2_tab:
-    x: 304.25
+r2_right_y:
+    x: 200
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1288,60 +1266,44 @@ mirror_r2_tab:
             - 0
         orient: 0
         shift:
-            - 4.75
+            - 0
             - 0
         rotate: 0
         adjust: {}
-        width: 28.5
+        width: 19
         height: 19
         padding: 19
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_tab_default
-        name: mirror_r2_tab
+        colrow: y_default
+        name: r2_right_y
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
-            key:
-                width: 1.5kx
-                shift:
-                    - 0.25kx
-                    - 0ky
             rows: {}
-            name: tab
+            key: {}
+            name: 'y'
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 0
-mirror_r2_q:
-    x: 280.5
+r2_right_u:
+    x: 219
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
-        spread: 28.5
+        spread: 19
         splay: 0
         origin:
             - 0
@@ -1358,44 +1320,31 @@ mirror_r2_q:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_q_default
-        name: mirror_r2_q
+        colrow: u_default
+        name: r2_right_u
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
-            key:
-                spread: 1.5kx
             rows: {}
-            name: q
+            key: {}
+            name: u
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r2_w:
-    x: 261.5
+r2_right_i:
+    x: 238
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1415,43 +1364,31 @@ mirror_r2_w:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_w_default
-        name: mirror_r2_w
+        colrow: i_default
+        name: r2_right_i
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
             rows: {}
             key: {}
-            name: w
+            name: i
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r2_e:
-    x: 242.5
+r2_right_o:
+    x: 257
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1471,43 +1408,31 @@ mirror_r2_e:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_e_default
-        name: mirror_r2_e
+        colrow: o_default
+        name: r2_right_o
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
             rows: {}
             key: {}
-            name: e
+            name: o
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r2_r:
-    x: 223.5
+r2_right_p:
+    x: 276
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1527,43 +1452,31 @@ mirror_r2_r:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_r_default
-        name: mirror_r2_r
+        colrow: p_default
+        name: r2_right_p
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
             rows: {}
             key: {}
-            name: r
+            name: p
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r2_t:
-    x: 204.5
+r2_right_backspace:
+    x: 295
     'y': 0
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1583,43 +1496,31 @@ mirror_r2_t:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_t_default
-        name: mirror_r2_t
+        colrow: backspace_default
+        name: r2_right_backspace
         zone:
             columns:
-                tab:
-                    key:
-                        width: 1.5kx
-                        shift:
-                            - 0.25kx
-                            - 0ky
-                    rows: {}
-                    name: tab
-                q:
-                    key:
-                        spread: 1.5kx
-                    rows: {}
-                    name: q
-                w: null
-                e: null
-                r: null
-                t: null
-            name: r2
+                'y': null
+                u: null
+                i: null
+                o: null
+                p: null
+                backspace: null
+            name: r2_right
         col:
             rows: {}
             key: {}
-            name: t
+            name: backspace
         row: default
-        mirrored: true
         bind:
             - 0
             - 0
             - 0
             - 10
-mirror_r3_caps:
-    x: 301.875
+r3_right_h:
+    x: 207.03
     'y': -19
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1629,60 +1530,43 @@ mirror_r3_caps:
             - 0
         orient: 0
         shift:
-            - 7.125
+            - 0
             - 0
         rotate: 0
         adjust: {}
-        width: 33.25
+        width: 19
         height: 19
         padding: 19
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_caps_default
-        name: mirror_r3_caps
+        colrow: h_default
+        name: r3_right_h
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+            name: r3_right
         col:
-            key:
-                width: 1.75kx
-                shift:
-                    - 0.375kx
-                    - 0ky
             rows: {}
-            name: caps
+            key: {}
+            name: h
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 0
-mirror_r3_a:
-    x: 275.75
+r3_right_j:
+    x: 226.03
     'y': -19
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
-        spread: 33.25
+        spread: 19
         splay: 0
         origin:
             - 0
@@ -1699,44 +1583,30 @@ mirror_r3_a:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_a_default
-        name: mirror_r3_a
+        colrow: j_default
+        name: r3_right_j
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+            name: r3_right
         col:
-            key:
-                spread: 1.75kx
             rows: {}
-            name: a
+            key: {}
+            name: j
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r3_s:
-    x: 256.75
+r3_right_k:
+    x: 245.03
     'y': -19
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1756,43 +1626,30 @@ mirror_r3_s:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_s_default
-        name: mirror_r3_s
+        colrow: k_default
+        name: r3_right_k
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+            name: r3_right
         col:
             rows: {}
             key: {}
-            name: s
+            name: k
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r3_d:
-    x: 237.75
+r3_right_l:
+    x: 264.03
     'y': -19
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1812,43 +1669,30 @@ mirror_r3_d:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_d_default
-        name: mirror_r3_d
+        colrow: l_default
+        name: r3_right_l
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+            name: r3_right
         col:
             rows: {}
             key: {}
-            name: d
+            name: l
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r3_f:
-    x: 218.75
+r3_right_colon:
+    x: 283.03
     'y': -19
-    r: -0.0
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1868,43 +1712,30 @@ mirror_r3_f:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_f_default
-        name: mirror_r3_f
+        colrow: colon_default
+        name: r3_right_colon
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
+                h: null
+                j: null
+                k: null
+                l: null
+                colon: null
+            name: r3_right
         col:
             rows: {}
             key: {}
-            name: f
+            name: colon
         row: default
-        mirrored: true
         bind:
             - 0
-            - 10
+            - 0
             - 0
             - 10
-mirror_r3_g:
-    x: 199.75
-    'y': -19
-    r: -0.0
+r4_right_b:
+    x: 197
+    'y': -38
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -1924,384 +1755,31 @@ mirror_r3_g:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_g_default
-        name: mirror_r3_g
+        colrow: b_default
+        name: r4_right_b
         zone:
             columns:
-                caps:
-                    key:
-                        width: 1.75kx
-                        shift:
-                            - 0.375kx
-                            - 0ky
-                    rows: {}
-                    name: caps
-                a:
-                    key:
-                        spread: 1.75kx
-                    rows: {}
-                    name: a
-                s: null
-                d: null
-                f: null
-                g: null
-            name: r3
-        col:
-            rows: {}
-            key: {}
-            name: g
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 0
-            - 0
-            - 10
-mirror_r4_lshift:
-    x: 297.125
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 19
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 11.875
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 42.75
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_lshift_default
-        name: mirror_r4_lshift
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
                 b: null
-            name: r4
-        col:
-            key:
-                width: 2.25kx
-                shift:
-                    - 0.625kx
-                    - 0ky
-            rows: {}
-            name: lshift
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 10
-            - 0
-            - 0
-mirror_r4_z:
-    x: 266.25
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 42.75
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 0
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 19
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_z_default
-        name: mirror_r4_z
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
-                b: null
-            name: r4
-        col:
-            key:
-                spread: 2.25kx
-            rows: {}
-            name: z
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 10
-            - 0
-            - 10
-mirror_r4_x:
-    x: 247.25
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 19
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 0
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 19
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_x_default
-        name: mirror_r4_x
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
-                b: null
-            name: r4
-        col:
-            rows: {}
-            key: {}
-            name: x
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 10
-            - 0
-            - 10
-mirror_r4_c:
-    x: 228.25
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 19
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 0
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 19
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_c_default
-        name: mirror_r4_c
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
-                b: null
-            name: r4
-        col:
-            rows: {}
-            key: {}
-            name: c
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 10
-            - 0
-            - 10
-mirror_r4_v:
-    x: 209.25
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 19
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 0
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 19
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_v_default
-        name: mirror_r4_v
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
-                b: null
-            name: r4
-        col:
-            rows: {}
-            key: {}
-            name: v
-        row: default
-        mirrored: true
-        bind:
-            - 0
-            - 10
-            - 0
-            - 10
-mirror_r4_b:
-    x: 190.25
-    'y': -38
-    r: -0.0
-    meta:
-        stagger: 0
-        spread: 19
-        splay: 0
-        origin:
-            - 0
-            - 0
-        orient: 0
-        shift:
-            - 0
-            - 0
-        rotate: 0
-        adjust: {}
-        width: 19
-        height: 19
-        padding: 19
-        autobind: 10
-        skip: false
-        asym: both
-        colrow: mirror_b_default
-        name: mirror_r4_b
-        zone:
-            columns:
-                lshift:
-                    key:
-                        width: 2.25kx
-                        shift:
-                            - 0.625kx
-                            - 0ky
-                    rows: {}
-                    name: lshift
-                z:
-                    key:
-                        spread: 2.25kx
-                    rows: {}
-                    name: z
-                x: null
-                c: null
-                v: null
-                b: null
-            name: r4
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
         col:
             rows: {}
             key: {}
             name: b
         row: default
-        mirrored: true
         bind:
             - 0
-            - 0
-            - 0
             - 10
-mirror_r5_lctrl:
-    x: 306.625
-    'y': -57
-    r: -0.0
+            - 0
+            - 0
+r4_right_n:
+    x: 216
+    'y': -38
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -2311,206 +1789,340 @@ mirror_r5_lctrl:
             - 0
         orient: 0
         shift:
-            - 2.375
+            - 0
             - 0
         rotate: 0
         adjust: {}
-        width: 23.75
+        width: 19
         height: 19
         padding: 19
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_lctrl_default
-        name: mirror_r5_lctrl
+        colrow: n_default
+        name: r4_right_n
         zone:
             columns:
-                lctrl:
-                    key:
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lctrl
-                lalt:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lalt
-                lcmd:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lcmd
-            name: r5
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
         col:
-            key:
-                width: 1.25kx
-                shift:
-                    - 0.125kx
-                    - 0ky
             rows: {}
-            name: lctrl
+            key: {}
+            name: 'n'
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
-            - 0
-mirror_r5_lalt:
-    x: 282.875
-    'y': -57
-    r: -0.0
+            - 10
+r4_right_m:
+    x: 235
+    'y': -38
+    r: 0
     meta:
         stagger: 0
-        spread: 23.75
+        spread: 19
         splay: 0
         origin:
             - 0
             - 0
         orient: 0
         shift:
-            - 2.375
+            - 0
             - 0
         rotate: 0
         adjust: {}
-        width: 23.75
+        width: 19
         height: 19
         padding: 19
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_lalt_default
-        name: mirror_r5_lalt
+        colrow: m_default
+        name: r4_right_m
         zone:
             columns:
-                lctrl:
-                    key:
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lctrl
-                lalt:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lalt
-                lcmd:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lcmd
-            name: r5
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
         col:
-            key:
-                spread: 1.25kx
-                width: 1.25kx
-                shift:
-                    - 0.125kx
-                    - 0ky
             rows: {}
-            name: lalt
+            key: {}
+            name: m
         row: default
-        mirrored: true
         bind:
             - 0
             - 10
             - 0
             - 10
-mirror_r5_lcmd:
-    x: 259.125
-    'y': -57
-    r: -0.0
+r4_right_comma:
+    x: 254
+    'y': -38
+    r: 0
     meta:
         stagger: 0
-        spread: 23.75
+        spread: 19
         splay: 0
         origin:
             - 0
             - 0
         orient: 0
         shift:
-            - 2.375
+            - 0
             - 0
         rotate: 0
         adjust: {}
-        width: 23.75
+        width: 19
         height: 19
         padding: 19
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_lcmd_default
-        name: mirror_r5_lcmd
+        colrow: comma_default
+        name: r4_right_comma
         zone:
             columns:
-                lctrl:
-                    key:
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lctrl
-                lalt:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lalt
-                lcmd:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
-                            - 0ky
-                    rows: {}
-                    name: lcmd
-            name: r5
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
         col:
-            key:
-                spread: 1.25kx
-                width: 1.25kx
-                shift:
-                    - 0.125kx
-                    - 0ky
             rows: {}
-            name: lcmd
+            key: {}
+            name: comma
         row: default
-        mirrored: true
+        bind:
+            - 0
+            - 10
+            - 0
+            - 10
+r4_right_peroid:
+    x: 273
+    'y': -38
+    r: 0
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 19
+        height: 19
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: peroid_default
+        name: r4_right_peroid
+        zone:
+            columns:
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
+        col:
+            rows: {}
+            key: {}
+            name: peroid
+        row: default
+        bind:
+            - 0
+            - 10
+            - 0
+            - 10
+r4_right_up_arrow:
+    x: 292
+    'y': -38
+    r: 0
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 19
+        height: 19
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: up_arrow_default
+        name: r4_right_up_arrow
+        zone:
+            columns:
+                b: null
+                'n': null
+                m: null
+                comma: null
+                peroid: null
+                up_arrow: null
+            name: r4_right
+        col:
+            rows: {}
+            key: {}
+            name: up_arrow
+        row: default
         bind:
             - 0
             - 0
             - 0
             - 10
-mirror_thumbfan:
-    x: 214
+r5_right_left_arrow:
+    x: 254
     'y': -57
-    r: -0.0
+    r: 0
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 19
+        height: 19
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: left_arrow_default
+        name: r5_right_left_arrow
+        zone:
+            columns:
+                left_arrow: null
+                down_arrow: null
+                right_arrow: null
+            name: r5_right
+        col:
+            rows: {}
+            key: {}
+            name: left_arrow
+        row: default
+        bind:
+            - 0
+            - 10
+            - 0
+            - 0
+r5_right_down_arrow:
+    x: 273
+    'y': -57
+    r: 0
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 19
+        height: 19
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: down_arrow_default
+        name: r5_right_down_arrow
+        zone:
+            columns:
+                left_arrow: null
+                down_arrow: null
+                right_arrow: null
+            name: r5_right
+        col:
+            rows: {}
+            key: {}
+            name: down_arrow
+        row: default
+        bind:
+            - 0
+            - 10
+            - 0
+            - 10
+r5_right_right_arrow:
+    x: 292
+    'y': -57
+    r: 0
+    meta:
+        stagger: 0
+        spread: 19
+        splay: 0
+        origin:
+            - 0
+            - 0
+        orient: 0
+        shift:
+            - 0
+            - 0
+        rotate: 0
+        adjust: {}
+        width: 19
+        height: 19
+        padding: 19
+        autobind: 10
+        skip: false
+        asym: both
+        colrow: right_arrow_default
+        name: r5_right_right_arrow
+        zone:
+            columns:
+                left_arrow: null
+                down_arrow: null
+                right_arrow: null
+            name: r5_right
+        col:
+            rows: {}
+            key: {}
+            name: right_arrow
+        row: default
+        bind:
+            - 0
+            - 0
+            - 0
+            - 10
+thumbfan_right:
+    x: 221
+    'y': -57
+    r: 0
     meta:
         stagger: 0
         spread: 19
@@ -2530,8 +2142,8 @@ mirror_thumbfan:
         autobind: 10
         skip: false
         asym: both
-        colrow: mirror_default_default
-        name: mirror_thumbfan
+        colrow: default_default
+        name: thumbfan_right
         zone:
             key:
                 width: 1.5kx
@@ -2540,13 +2152,12 @@ mirror_thumbfan:
                     rows: {}
                     key: {}
                     name: default
-            name: thumbfan
+            name: thumbfan_right
         col:
             rows: {}
             key: {}
             name: default
         row: default
-        mirrored: true
         bind:
             - 0
             - 0

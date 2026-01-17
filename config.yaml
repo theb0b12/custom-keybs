@@ -1,0 +1,133 @@
+meta:
+  engine: 4.1.0
+units:
+  # cx: 18 # choc v1 x
+  # cy: 17 # choc v1 y
+  # u: 19 # MX "tight"
+  # U: 19.05 # MX "standard"
+  # MX is used for choc v2
+  # "tight" vs "standard" is preference
+
+  # sx/sy: switch/spacing width/height
+  # cx/cy for choc v1
+  # both u for MX/choc v2 "tight"
+  # both U for MX/choc v2 "standard"
+  sx: cx
+  sy: cy
+
+  # tx/ty: keycap trim amount
+  # use (w*sx) - tx/(h*sy) - ty for actual keycap size
+  # e.g. 2.25sx - tx for a 2.25u wide keycap
+  # this is because keycap size is smaller by a uniform
+  # amount than the full "zone" the key lives in
+  # a 2.25u switch occupies 2.25sx of horizontal space
+  # the 2.25u keycap occupies 2.25sx - tx of horizontal
+  # space to ensure a 2tx gap between keycaps
+  tx: 0.5
+  ty: 0.5
+
+  # row_a: this is the "small" row stagger
+  # row_b: this is the "large" row stagger
+  row_a: 0.25sx
+  row_b: 0.5sx
+points:
+  key:
+    height: sx - tx
+    width: sy - ty
+    spread: sy
+    padding: sx
+  zones:
+    matrix_l:
+      key:
+        tags: "matrix"
+      anchor:
+        shift: [0, 0]
+        rotate: -90
+      columns:
+        num:
+          rows.6:
+            # extra key
+        alpha_top:
+          key.stagger: row_b
+          rows.0:
+            adjust.shift: [0, -0.25sx]
+            height: 1.5sx - tx
+        alpha_mid:
+          key.stagger: row_a
+          rows.0:
+            adjust.shift: [0, -0.375sx]
+            height: 1.75sx - tx
+        alpha_bot:
+          key.stagger: -row_b
+          rows.0:
+            adjust.shift: [0, -0.125sx]
+            height: 1.25sx - tx
+          rows.6:
+        control:
+          key:
+            height: 1.25sx - tx
+            padding: 1.25sx
+            stagger: -0.125sx
+          rows.4:
+            adjust.shift: [0, 0.25sx]
+            height: 1.75sx - tx
+          rows.5.skip: true
+      rows:
+        0:
+        1:
+        2:
+        3:
+        4:
+        5:
+    matrix_r:
+      key:
+        tags: "matrix"
+      anchor:
+        shift: [8sx, 0]
+        rotate: -90
+      columns:
+        num:
+          rows.0.skip: true
+          rows.7:
+            adjust.shift: [0, 0.25sx]
+            height: 1.5sx - tx
+        alpha_top:
+          key.stagger: row_b
+          rows.7:
+            # no shift, no height change
+        alpha_mid:
+          key.stagger: row_a
+          rows.6:
+            adjust.shift: [0, 0.375sx]
+            height: 1.75sx - tx
+        alpha_bot:
+          key.stagger: row_b
+          rows.5:
+            adjust.shift: [0, 0.625sx]
+            height: 2.25sx - tx
+          rows.6.skip: true
+        control:
+          key:
+            height: 1.25sx - tx
+            padding: 1.25sx
+            stagger: -0.125sx
+          rows.0:
+            height: 1.75sx - tx
+            padding: 1.5sx
+          rows.4:
+            adjust.shift: [0, 0.5sx]
+            height: 2.25sx - tx
+          rows.5.skip: true
+          rows.6.skip: true
+      rows:
+        0:
+        1:
+        2:
+        3:
+        4:
+        5:
+        6:
+
+outlines:
+pcbs:
+cases:

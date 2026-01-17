@@ -1,0 +1,1638 @@
+models:
+    export:
+        models:
+            r2_tab:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - -9.5
+                            - 9.5
+                        end:
+                            - 19
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 19
+                            - 9.5
+                        end:
+                            - 19
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 19
+                            - -9.5
+                        end:
+                            - -9.5
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -9.5
+                        end:
+                            - -9.5
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r2_q:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 19
+                            - 9.5
+                        end:
+                            - 38
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 38
+                            - 9.5
+                        end:
+                            - 38
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 38
+                            - -9.5
+                        end:
+                            - 19
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 19
+                            - -9.5
+                        end:
+                            - 19
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r2_w:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 38
+                            - 9.5
+                        end:
+                            - 57
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 57
+                            - 9.5
+                        end:
+                            - 57
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 57
+                            - -9.5
+                        end:
+                            - 38
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 38
+                            - -9.5
+                        end:
+                            - 38
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r2_e:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 57
+                            - 9.5
+                        end:
+                            - 76
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 76
+                            - 9.5
+                        end:
+                            - 76
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 76
+                            - -9.5
+                        end:
+                            - 57
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 57
+                            - -9.5
+                        end:
+                            - 57
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r2_r:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 76
+                            - 9.5
+                        end:
+                            - 95
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 95
+                            - 9.5
+                        end:
+                            - 95
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 95
+                            - -9.5
+                        end:
+                            - 76
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 76
+                            - -9.5
+                        end:
+                            - 76
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r2_t:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 95
+                            - 9.5
+                        end:
+                            - 114
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 114
+                            - 9.5
+                        end:
+                            - 114
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 114
+                            - -9.5
+                        end:
+                            - 95
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 95
+                            - -9.5
+                        end:
+                            - 95
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            r3_caps:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -9.5
+                        end:
+                            - 23.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 23.75
+                            - -9.5
+                        end:
+                            - 23.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 23.75
+                            - -28.5
+                        end:
+                            - -9.5
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -28.5
+                        end:
+                            - -9.5
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r3_a:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 23.75
+                            - -9.5
+                        end:
+                            - 42.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 42.75
+                            - -9.5
+                        end:
+                            - 42.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 42.75
+                            - -28.5
+                        end:
+                            - 23.75
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 23.75
+                            - -28.5
+                        end:
+                            - 23.75
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r3_s:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 42.75
+                            - -9.5
+                        end:
+                            - 61.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -9.5
+                        end:
+                            - 61.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -28.5
+                        end:
+                            - 42.75
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 42.75
+                            - -28.5
+                        end:
+                            - 42.75
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r3_d:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -9.5
+                        end:
+                            - 80.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -9.5
+                        end:
+                            - 80.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -28.5
+                        end:
+                            - 61.75
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -28.5
+                        end:
+                            - 61.75
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r3_f:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -9.5
+                        end:
+                            - 99.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 99.75
+                            - -9.5
+                        end:
+                            - 99.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 99.75
+                            - -28.5
+                        end:
+                            - 80.75
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -28.5
+                        end:
+                            - 80.75
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r3_g:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 99.75
+                            - -9.5
+                        end:
+                            - 118.75
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 118.75
+                            - -9.5
+                        end:
+                            - 118.75
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 118.75
+                            - -28.5
+                        end:
+                            - 99.75
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 99.75
+                            - -28.5
+                        end:
+                            - 99.75
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            r4_lshift:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -28.5
+                        end:
+                            - 33.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 33.25
+                            - -28.5
+                        end:
+                            - 33.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 33.25
+                            - -47.5
+                        end:
+                            - -9.5
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -47.5
+                        end:
+                            - -9.5
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r4_z:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 33.25
+                            - -28.5
+                        end:
+                            - 52.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 52.25
+                            - -28.5
+                        end:
+                            - 52.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 52.25
+                            - -47.5
+                        end:
+                            - 33.25
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 33.25
+                            - -47.5
+                        end:
+                            - 33.25
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r4_x:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 52.25
+                            - -28.5
+                        end:
+                            - 71.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 71.25
+                            - -28.5
+                        end:
+                            - 71.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 71.25
+                            - -47.5
+                        end:
+                            - 52.25
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 52.25
+                            - -47.5
+                        end:
+                            - 52.25
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r4_c:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 71.25
+                            - -28.5
+                        end:
+                            - 90.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 90.25
+                            - -28.5
+                        end:
+                            - 90.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 90.25
+                            - -47.5
+                        end:
+                            - 71.25
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 71.25
+                            - -47.5
+                        end:
+                            - 71.25
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r4_v:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 90.25
+                            - -28.5
+                        end:
+                            - 109.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -28.5
+                        end:
+                            - 109.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -47.5
+                        end:
+                            - 90.25
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 90.25
+                            - -47.5
+                        end:
+                            - 90.25
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r4_b:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -28.5
+                        end:
+                            - 128.25
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 128.25
+                            - -28.5
+                        end:
+                            - 128.25
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 128.25
+                            - -47.5
+                        end:
+                            - 109.25
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -47.5
+                        end:
+                            - 109.25
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            r5_lctrl:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -47.5
+                        end:
+                            - 14.25
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 14.25
+                            - -47.5
+                        end:
+                            - 14.25
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 14.25
+                            - -66.5
+                        end:
+                            - -9.5
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - -9.5
+                            - -66.5
+                        end:
+                            - -9.5
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            r5_lalt:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 14.25
+                            - -47.5
+                        end:
+                            - 38
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 38
+                            - -47.5
+                        end:
+                            - 38
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 38
+                            - -66.5
+                        end:
+                            - 14.25
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 14.25
+                            - -66.5
+                        end:
+                            - 14.25
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            r5_lcmd:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 38
+                            - -47.5
+                        end:
+                            - 61.75
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -47.5
+                        end:
+                            - 61.75
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 61.75
+                            - -66.5
+                        end:
+                            - 38
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 38
+                            - -66.5
+                        end:
+                            - 38
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            thumbfan:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -47.5
+                        end:
+                            - 109.25
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -47.5
+                        end:
+                            - 109.25
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 109.25
+                            - -66.5
+                        end:
+                            - 80.75
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 80.75
+                            - -66.5
+                        end:
+                            - 80.75
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_tab:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 290
+                            - 9.5
+                        end:
+                            - 318.5
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 318.5
+                            - 9.5
+                        end:
+                            - 318.5
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -9.5
+                        end:
+                            - 290
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 290
+                            - -9.5
+                        end:
+                            - 290
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_q:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 271
+                            - 9.5
+                        end:
+                            - 290
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 290
+                            - 9.5
+                        end:
+                            - 290
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 290
+                            - -9.5
+                        end:
+                            - 271
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 271
+                            - -9.5
+                        end:
+                            - 271
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_w:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 252
+                            - 9.5
+                        end:
+                            - 271
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 271
+                            - 9.5
+                        end:
+                            - 271
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 271
+                            - -9.5
+                        end:
+                            - 252
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 252
+                            - -9.5
+                        end:
+                            - 252
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_e:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 233
+                            - 9.5
+                        end:
+                            - 252
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 252
+                            - 9.5
+                        end:
+                            - 252
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 252
+                            - -9.5
+                        end:
+                            - 233
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 233
+                            - -9.5
+                        end:
+                            - 233
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_r:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 214
+                            - 9.5
+                        end:
+                            - 233
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 233
+                            - 9.5
+                        end:
+                            - 233
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 233
+                            - -9.5
+                        end:
+                            - 214
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 214
+                            - -9.5
+                        end:
+                            - 214
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r2_t:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 195
+                            - 9.5
+                        end:
+                            - 214
+                            - 9.5
+                    right:
+                        type: line
+                        origin:
+                            - 214
+                            - 9.5
+                        end:
+                            - 214
+                            - -9.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 214
+                            - -9.5
+                        end:
+                            - 195
+                            - -9.5
+                    left:
+                        type: line
+                        origin:
+                            - 195
+                            - -9.5
+                        end:
+                            - 195
+                            - 9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_caps:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 285.25
+                            - -9.5
+                        end:
+                            - 318.5
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -9.5
+                        end:
+                            - 318.5
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -28.5
+                        end:
+                            - 285.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 285.25
+                            - -28.5
+                        end:
+                            - 285.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_a:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 266.25
+                            - -9.5
+                        end:
+                            - 285.25
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 285.25
+                            - -9.5
+                        end:
+                            - 285.25
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 285.25
+                            - -28.5
+                        end:
+                            - 266.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 266.25
+                            - -28.5
+                        end:
+                            - 266.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_s:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -9.5
+                        end:
+                            - 266.25
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 266.25
+                            - -9.5
+                        end:
+                            - 266.25
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 266.25
+                            - -28.5
+                        end:
+                            - 247.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -28.5
+                        end:
+                            - 247.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_d:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -9.5
+                        end:
+                            - 247.25
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -9.5
+                        end:
+                            - 247.25
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -28.5
+                        end:
+                            - 228.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -28.5
+                        end:
+                            - 228.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_f:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 209.25
+                            - -9.5
+                        end:
+                            - 228.25
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -9.5
+                        end:
+                            - 228.25
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -28.5
+                        end:
+                            - 209.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 209.25
+                            - -28.5
+                        end:
+                            - 209.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r3_g:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 190.25
+                            - -9.5
+                        end:
+                            - 209.25
+                            - -9.5
+                    right:
+                        type: line
+                        origin:
+                            - 209.25
+                            - -9.5
+                        end:
+                            - 209.25
+                            - -28.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 209.25
+                            - -28.5
+                        end:
+                            - 190.25
+                            - -28.5
+                    left:
+                        type: line
+                        origin:
+                            - 190.25
+                            - -28.5
+                        end:
+                            - 190.25
+                            - -9.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_lshift:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 275.75
+                            - -28.5
+                        end:
+                            - 318.5
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -28.5
+                        end:
+                            - 318.5
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -47.5
+                        end:
+                            - 275.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 275.75
+                            - -47.5
+                        end:
+                            - 275.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_z:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 256.75
+                            - -28.5
+                        end:
+                            - 275.75
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 275.75
+                            - -28.5
+                        end:
+                            - 275.75
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 275.75
+                            - -47.5
+                        end:
+                            - 256.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 256.75
+                            - -47.5
+                        end:
+                            - 256.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_x:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 237.75
+                            - -28.5
+                        end:
+                            - 256.75
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 256.75
+                            - -28.5
+                        end:
+                            - 256.75
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 256.75
+                            - -47.5
+                        end:
+                            - 237.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 237.75
+                            - -47.5
+                        end:
+                            - 237.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_c:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 218.75
+                            - -28.5
+                        end:
+                            - 237.75
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 237.75
+                            - -28.5
+                        end:
+                            - 237.75
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 237.75
+                            - -47.5
+                        end:
+                            - 218.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 218.75
+                            - -47.5
+                        end:
+                            - 218.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_v:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -28.5
+                        end:
+                            - 218.75
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 218.75
+                            - -28.5
+                        end:
+                            - 218.75
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 218.75
+                            - -47.5
+                        end:
+                            - 199.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -47.5
+                        end:
+                            - 199.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r4_b:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 180.75
+                            - -28.5
+                        end:
+                            - 199.75
+                            - -28.5
+                    right:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -28.5
+                        end:
+                            - 199.75
+                            - -47.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -47.5
+                        end:
+                            - 180.75
+                            - -47.5
+                    left:
+                        type: line
+                        origin:
+                            - 180.75
+                            - -47.5
+                        end:
+                            - 180.75
+                            - -28.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r5_lctrl:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 294.75
+                            - -47.5
+                        end:
+                            - 318.5
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -47.5
+                        end:
+                            - 318.5
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 318.5
+                            - -66.5
+                        end:
+                            - 294.75
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 294.75
+                            - -66.5
+                        end:
+                            - 294.75
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r5_lalt:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 271
+                            - -47.5
+                        end:
+                            - 294.75
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 294.75
+                            - -47.5
+                        end:
+                            - 294.75
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 294.75
+                            - -66.5
+                        end:
+                            - 271
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 271
+                            - -66.5
+                        end:
+                            - 271
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            mirror_r5_lcmd:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -47.5
+                        end:
+                            - 271
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 271
+                            - -47.5
+                        end:
+                            - 271
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 271
+                            - -66.5
+                        end:
+                            - 247.25
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 247.25
+                            - -66.5
+                        end:
+                            - 247.25
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+            mirror_thumbfan:
+                paths:
+                    top:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -47.5
+                        end:
+                            - 228.25
+                            - -47.5
+                    right:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -47.5
+                        end:
+                            - 228.25
+                            - -66.5
+                    bottom:
+                        type: line
+                        origin:
+                            - 228.25
+                            - -66.5
+                        end:
+                            - 199.75
+                            - -66.5
+                    left:
+                        type: line
+                        origin:
+                            - 199.75
+                            - -66.5
+                        end:
+                            - 199.75
+                            - -47.5
+                origin:
+                    - 0
+                    - 0
+        origin:
+            - 0
+            - 0
+units: mm
+origin:
+    - 0
+    - 0

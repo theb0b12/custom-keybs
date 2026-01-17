@@ -17,7 +17,7 @@ points:
       anchor:
         shift: [starting_x, starting_y]
       columns:
-        tab:
+        esc:
           key:
             width: 1.5kx
             shift: [0.25kx, 0ky]
@@ -33,7 +33,7 @@ points:
       anchor:
         shift: [starting_x, starting_y-ky]
       columns:
-        caps:
+        tab:
           key:
             width: 1.75kx
             shift: [0.375kx, 0ky]
@@ -68,16 +68,12 @@ points:
           key:
             width: 1.25kx
             shift: [0.125kx, 0ky]
-        lalt:
+        super:
           key:
             spread: 1.25kx
             width: 1.25kx
             shift: [0.125kx, 0ky]
-        lcmd:
-          key:
-            spread: 1.25kx
-            width: 1.25kx
-            shift: [0.125kx, 0ky]
+
     thumbfan:
       anchor:
         shift: [starting_x+5ky, starting_y-3ky]

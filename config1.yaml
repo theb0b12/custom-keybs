@@ -1,0 +1,92 @@
+units:
+  # kx and ky allow for easy- easi-er switching between MX and Choc.
+  kx: u
+  ky: u
+  # These variables allow for updating the previews on https://ergogen.ceoloide.com
+  $default_width: u
+  $default_height: u
+  # KiCAD places the PCB in the middle of nowhere to start with.
+  # These variables give a starting place for later shifts.
+  starting_x: 0
+  starting_y: 0
+
+  # The distance between the Function Row and the Number Row.
+  r0_gap: 0ky
+points:
+  zones:
+    r2:
+      anchor:
+        shift: [starting_x, starting_y]
+      columns:
+        tab:
+          key:
+            width: 1.5kx
+            shift: [0.25kx, 0ky]
+        q:
+          key:
+            spread: 1.5kx
+        w:
+        e:
+        r:
+        t:
+        
+    r3:
+      anchor:
+        shift: [starting_x, starting_y-ky]
+      columns:
+        caps:
+          key:
+            width: 1.75kx
+            shift: [0.375kx, 0ky]
+        a:
+          key:
+            spread: 1.75kx
+        s:
+        d:
+        f:
+        g:
+
+    r4:
+      anchor:
+        shift: [starting_x, starting_y-2ky]
+      columns:
+        lshift:
+          key:
+            width: 2.25kx
+            shift: [0.625kx, 0ky]
+        z:
+          key:
+            spread: 2.25kx
+        x:
+        c:
+        v:
+        b:
+    r5:
+      anchor:
+        shift: [starting_x, starting_y-3ky]
+      columns:
+        lctrl:
+          key:
+            width: 1.25kx
+            shift: [0.125kx, 0ky]
+        lalt:
+          key:
+            spread: 1.25kx
+            width: 1.25kx
+            shift: [0.125kx, 0ky]
+        lcmd:
+          key:
+            spread: 1.25kx
+            width: 1.25kx
+            shift: [0.125kx, 0ky]
+    thumbfan:
+      anchor:
+        shift: [starting_x+5ky, starting_y-3ky]
+      key:
+            width: 1.5kx
+
+
+
+  mirror:
+    ref: r2_t
+    distance: 100

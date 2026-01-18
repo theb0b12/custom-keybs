@@ -13,11 +13,11 @@ points:
                     - starting_x
                     - starting_y
             columns:
-                tab:
+                esc:
                     key:
-                        width: 1.5kx
+                        width: 1kx
                         shift:
-                            - 0.25kx
+                            - 0.5kx
                             - 0ky
                 q:
                     key:
@@ -32,11 +32,11 @@ points:
                     - starting_x
                     - starting_y-ky
             columns:
-                caps:
+                tab:
                     key:
-                        width: 1.75kx
+                        width: 1.25kx
                         shift:
-                            - 0.375kx
+                            - 0.62kx
                             - 0ky
                 a:
                     key:
@@ -53,9 +53,9 @@ points:
             columns:
                 lshift:
                     key:
-                        width: 2.25kx
+                        width: 1.75kx
                         shift:
-                            - 0.625kx
+                            - 0.87kx
                             - 0ky
                 z:
                     key:
@@ -74,29 +74,34 @@ points:
                     key:
                         width: 1.25kx
                         shift:
-                            - 0.125kx
+                            - 0.62kx
                             - 0ky
-                lalt:
+                super:
                     key:
                         spread: 1.25kx
                         width: 1.25kx
                         shift:
-                            - 0.125kx
-                            - 0ky
-                lcmd:
-                    key:
-                        spread: 1.25kx
-                        width: 1.25kx
-                        shift:
-                            - 0.125kx
+                            - 0.62kx
                             - 0ky
         thumbfan:
             anchor:
                 shift:
-                    - starting_x+5ky
+                    - starting_x+5.8ky
                     - starting_y-3ky
-            key:
-                width: 1.5kx
+            columns:
+                lower:
+                    key:
+                        rotate: -7
+                        shift:
+                            - 0
+                            - -2
+                space:
+                    key:
+                        width: 1.5kx
+                        rotate: 60
+                        shift:
+                            - 0.33kx
+                            - '-0.2ky'
         r2_right:
             anchor:
                 shift:
@@ -131,7 +136,7 @@ points:
                 m: null
                 comma: null
                 peroid: null
-                up_arrow: null
+                slash: null
         r5_right:
             anchor:
                 shift:
@@ -139,12 +144,28 @@ points:
                     - starting_y-3ky
             columns:
                 left_arrow: null
-                down_arrow: null
+                down_arrow:
+                    key:
+                        shift:
+                            - 0.000001
+                            - 0
                 right_arrow: null
         thumbfan_right:
             anchor:
                 shift:
-                    - starting_x+202+1ky
+                    - starting_x+9.5ky
                     - starting_y-3ky
-            key:
-                width: 1.5kx
+            columns:
+                space:
+                    key:
+                        width: 1.5kx
+                        rotate: -60
+                        shift:
+                            - -1
+                            - '-0.2ky'
+                raise:
+                    key:
+                        shift:
+                            - 0.4kx
+                            - -2
+                        rotate: 7

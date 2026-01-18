@@ -19,8 +19,8 @@ points:
       columns:
         esc:
           key:
-            width: 1.5kx
-            shift: [0.25kx, 0ky]
+            width: 1kx
+            shift: [0.5kx, 0ky]
         q:
           key:
             spread: 1.5kx
@@ -35,8 +35,8 @@ points:
       columns:
         tab:
           key:
-            width: 1.75kx
-            shift: [0.375kx, 0ky]
+            width: 1.25kx
+            shift: [0.62kx, 0ky]
         a:
           key:
             spread: 1.75kx
@@ -51,8 +51,8 @@ points:
       columns:
         lshift:
           key:
-            width: 2.25kx
-            shift: [0.625kx, 0ky]
+            width: 1.75kx
+            shift: [0.87kx, 0ky]
         z:
           key:
             spread: 2.25kx
@@ -67,23 +67,26 @@ points:
         lctrl:
           key:
             width: 1.25kx
-            shift: [0.125kx, 0ky]
+            shift: [0.62kx, 0ky]
         super:
           key:
             spread: 1.25kx
             width: 1.25kx
-            shift: [0.125kx, 0ky]
+            shift: [0.62kx, 0ky]
 
     thumbfan:
       anchor:
         shift: [starting_x+5.8ky, starting_y-3ky]
       columns:
         lower:
+          key:
+            rotate: -7
+            shift: [0, -2]
         space:
           key:
             width: 1.5kx
             rotate: 60
-            shift: [0.4kx, 0.1ky]
+            shift: [0.33kx, -0.2ky]
 
     
 
@@ -119,7 +122,7 @@ points:
         m:
         comma:
         peroid:
-        up_arrow:
+        slash:
     
     r5_right:
       anchor:
@@ -127,6 +130,8 @@ points:
       columns:
         left_arrow:
         down_arrow:
+          key:
+            shift: [0.000001, 0]
         right_arrow:
         
     thumbfan_right:
@@ -137,10 +142,12 @@ points:
           key:
             width: 1.5kx
             rotate: -60
-            shift: [-2, 0.1ky]
+            shift: [-1, -0.2ky]
         raise:
           key:
-            shift: [0.4kx, 0]
+            shift: [0.4kx, -2]
+            rotate: 7
+
 
   # right side far right column
     # right_side_column:
@@ -150,35 +157,35 @@ points:
     #     backspace:
 
       
-outlines:
-  board:
-    - what: polygon
-      points:
-        # top left
-        - ref: r2_esc
-          shift: [-u/2, u/2]
+# outlines:
+#   board:
+#     - what: polygon
+#       points:
+#         # top left
+#         - ref: r2_esc
+#           shift: [-u/2, u/2]
 
-        # top right
-        - ref: r2_right_backspace
-          shift: [u/2, u/2]
+#         # top right
+#         - ref: r2_right_backspace
+#           shift: [u/2, u/2]
 
-        # bottom right (thumb)
-        - ref: thumbfan_right_raise
-          shift: [u/2, -u/2]
+#         # bottom right (thumb)
+#         - ref: thumbfan_right_raise
+#           shift: [u/2, -u/2]
 
-        # bottom left (thumb)
-        - ref: thumbfan_space
-          shift: [-u/2, -u/2]
+#         # bottom left (thumb)
+#         - ref: thumbfan_space
+#           shift: [-u/2, -u/2]
 
-  keycaps:
-    - what: rectangle
-      where: true
-      size: [u, u]
-      fillet: 3
+#   keycaps:
+#     - what: rectangle
+#       where: true
+#       size: [u, u]
+#       fillet: 3
 
-  preview:
-    - what: outline
-      name: board
-    - what: outline
-      name: keycaps
-      operation: stack
+#   preview:
+#     - what: outline
+#       name: board
+#     - what: outline
+#       name: keycaps
+#       operation: stack

@@ -2,6 +2,8 @@ units:
   # kx and ky allow for easy- easi-er switching between MX and Choc.
   kx: u
   ky: u
+  px: kx + 2
+  py: ky + 2
   # These variables allow for updating the previews on https://ergogen.ceoloide.com
   $default_width: u
   $default_height: u
@@ -148,6 +150,46 @@ points:
             shift: [0.4kx, -2]
             rotate: 7
 
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+    - what: rectangle
+      where: [thumbfan_space]
+      size: [kx*1.5, ky]
+      fillet: 2
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2_esc
+          shift: [-0.52px, 0.5py]
+        - ref: r2_t
+          shift: [2.5px, 0.5py]
+        - ref: thumbfan_space
+          shift: [18*1.5, 18*-0.6]
+        - ref: thumbfan_space
+          shift: [18*-0.8,18*-0.6]
+        - ref: thumbfan_lower
+          shift: [-0.5px, -0.5py]
+        - ref: thumbfan_lower
+          shift: [-0.5px, 0]
+        - ref: r5_super
+          shift: [0.5px, 0]
+        - ref: r5_super
+          shift: [0.5px, -0.5py]
+        - ref: r5_lctrl
+          shift: [-0.5px, -0.5py]
+      fillet: 3
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
 
   # right side far right column
     # right_side_column:

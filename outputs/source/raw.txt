@@ -148,7 +148,11 @@ points:
             shift: [0.4kx, -2]
             rotate: 7
 
-
+# outlines:
+#   raw:
+#     - what: rectangle
+#       where: true
+#       size: [kx, ky]
   # right side far right column
     # right_side_column:
     #   anchor:

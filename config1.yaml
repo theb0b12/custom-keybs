@@ -17,7 +17,7 @@ points:
       anchor:
         shift: [starting_x, starting_y]
       columns:
-        tab:
+        esc:
           key:
             width: 1.5kx
             shift: [0.25kx, 0ky]
@@ -33,7 +33,7 @@ points:
       anchor:
         shift: [starting_x, starting_y-ky]
       columns:
-        caps:
+        tab:
           key:
             width: 1.75kx
             shift: [0.375kx, 0ky]
@@ -68,21 +68,23 @@ points:
           key:
             width: 1.25kx
             shift: [0.125kx, 0ky]
-        lalt:
+        super:
           key:
             spread: 1.25kx
             width: 1.25kx
             shift: [0.125kx, 0ky]
-        lcmd:
-          key:
-            spread: 1.25kx
-            width: 1.25kx
-            shift: [0.125kx, 0ky]
+
     thumbfan:
       anchor:
-        shift: [starting_x+5ky, starting_y-3ky]
-      key:
-        width: 1.5kx
+        shift: [starting_x+5.8ky, starting_y-3ky]
+      columns:
+        lower:
+        space:
+          key:
+            width: 1.5kx
+            rotate: 60
+            shift: [0.4kx, 0.1ky]
+
     
 
   # right side
@@ -129,9 +131,16 @@ points:
         
     thumbfan_right:
       anchor:
-        shift: [starting_x+202+1ky, starting_y-3ky]
-      key:
-        width: 1.5kx
+        shift: [starting_x+9.5ky, starting_y-3ky]
+      columns:
+        space:
+          key:
+            width: 1.5kx
+            rotate: -60
+            shift: [-2, 0.1ky]
+        raise:
+          key:
+            shift: [0.4kx, 0]
 
   # right side far right column
     # right_side_column:
@@ -139,3 +148,10 @@ points:
     #     shift: [starting_x+314, starting_y]
     #   columns:
     #     backspace:
+        
+
+
+
+
+
+        

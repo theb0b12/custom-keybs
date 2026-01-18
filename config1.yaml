@@ -126,23 +126,16 @@ points:
         left_arrow:
         down_arrow:
         right_arrow:
-    
+        
     thumbfan_right:
       anchor:
         shift: [starting_x+202+1ky, starting_y-3ky]
       key:
         width: 1.5kx
-  
+
   # right side far right column
     # right_side_column:
     #   anchor:
     #     shift: [starting_x+314, starting_y]
     #   columns:
     #     backspace:
-        
-
-
-
-
-
-        

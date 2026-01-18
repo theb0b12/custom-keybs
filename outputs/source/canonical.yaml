@@ -3,8 +3,8 @@ units:
     ky: u
     $default_width: u
     $default_height: u
-    starting_x: 0
-    starting_y: 0
+    starting_x: 1
+    starting_y: 1
 points:
     zones:
         r2:

@@ -1,6 +1,6 @@
 r2_esc:
-    x: 9.5
-    'y': 0
+    x: 10.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -58,8 +58,8 @@ r2_esc:
             - 0
             - 0
 r2_q:
-    x: 28.5
-    'y': 0
+    x: 29.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -114,8 +114,8 @@ r2_q:
             - 0
             - 10
 r2_w:
-    x: 47.5
-    'y': 0
+    x: 48.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -169,8 +169,8 @@ r2_w:
             - 0
             - 10
 r2_e:
-    x: 66.5
-    'y': 0
+    x: 67.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -224,8 +224,8 @@ r2_e:
             - 0
             - 10
 r2_r:
-    x: 85.5
-    'y': 0
+    x: 86.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -279,8 +279,8 @@ r2_r:
             - 0
             - 10
 r2_t:
-    x: 104.5
-    'y': 0
+    x: 105.5
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -334,8 +334,8 @@ r2_t:
             - 0
             - 10
 r3_tab:
-    x: 11.78
-    'y': -19
+    x: 12.78
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -393,8 +393,8 @@ r3_tab:
             - 0
             - 0
 r3_a:
-    x: 33.25
-    'y': -19
+    x: 34.25
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -449,8 +449,8 @@ r3_a:
             - 0
             - 10
 r3_s:
-    x: 52.25
-    'y': -19
+    x: 53.25
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -504,8 +504,8 @@ r3_s:
             - 0
             - 10
 r3_d:
-    x: 71.25
-    'y': -19
+    x: 72.25
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -559,8 +559,8 @@ r3_d:
             - 0
             - 10
 r3_f:
-    x: 90.25
-    'y': -19
+    x: 91.25
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -614,8 +614,8 @@ r3_f:
             - 0
             - 10
 r3_g:
-    x: 109.25
-    'y': -19
+    x: 110.25
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -669,8 +669,8 @@ r3_g:
             - 0
             - 10
 r4_lshift:
-    x: 16.53
-    'y': -38
+    x: 17.53
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -728,8 +728,8 @@ r4_lshift:
             - 0
             - 0
 r4_z:
-    x: 42.75
-    'y': -38
+    x: 43.75
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -784,8 +784,8 @@ r4_z:
             - 0
             - 10
 r4_x:
-    x: 61.75
-    'y': -38
+    x: 62.75
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -839,8 +839,8 @@ r4_x:
             - 0
             - 10
 r4_c:
-    x: 80.75
-    'y': -38
+    x: 81.75
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -894,8 +894,8 @@ r4_c:
             - 0
             - 10
 r4_v:
-    x: 99.75
-    'y': -38
+    x: 100.75
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -949,8 +949,8 @@ r4_v:
             - 0
             - 10
 r4_b:
-    x: 118.75
-    'y': -38
+    x: 119.75
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1004,8 +1004,8 @@ r4_b:
             - 0
             - 10
 r5_lctrl:
-    x: 11.78
-    'y': -57
+    x: 12.78
+    'y': -56
     r: 0
     meta:
         stagger: 0
@@ -1063,8 +1063,8 @@ r5_lctrl:
             - 0
             - 0
 r5_super:
-    x: 35.53
-    'y': -57
+    x: 36.53
+    'y': -56
     r: 0
     meta:
         stagger: 0
@@ -1123,8 +1123,8 @@ r5_super:
             - 0
             - 10
 thumbfan_lower:
-    x: 110.2
-    'y': -59
+    x: 111.2
+    'y': -58
     r: -7
     meta:
         stagger: 0
@@ -1182,8 +1182,8 @@ thumbfan_lower:
             - 0
             - 0
 thumbfan_space:
-    x: 135.47
-    'y': -60.8
+    x: 136.47
+    'y': -59.8
     r: 60
     meta:
         stagger: 0
@@ -1242,8 +1242,8 @@ thumbfan_space:
             - 0
             - 0
 r2_right_y:
-    x: 200
-    'y': 0
+    x: 201
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1286,8 +1286,8 @@ r2_right_y:
             - 0
             - 0
 r2_right_u:
-    x: 219
-    'y': 0
+    x: 220
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1330,8 +1330,8 @@ r2_right_u:
             - 0
             - 10
 r2_right_i:
-    x: 238
-    'y': 0
+    x: 239
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1374,8 +1374,8 @@ r2_right_i:
             - 0
             - 10
 r2_right_o:
-    x: 257
-    'y': 0
+    x: 258
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1418,8 +1418,8 @@ r2_right_o:
             - 0
             - 10
 r2_right_p:
-    x: 276
-    'y': 0
+    x: 277
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1462,8 +1462,8 @@ r2_right_p:
             - 0
             - 10
 r2_right_backspace:
-    x: 295
-    'y': 0
+    x: 296
+    'y': 1
     r: 0
     meta:
         stagger: 0
@@ -1506,8 +1506,8 @@ r2_right_backspace:
             - 0
             - 10
 r3_right_h:
-    x: 207.03
-    'y': -19
+    x: 208.03
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -1549,8 +1549,8 @@ r3_right_h:
             - 0
             - 0
 r3_right_j:
-    x: 226.03
-    'y': -19
+    x: 227.03
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -1592,8 +1592,8 @@ r3_right_j:
             - 0
             - 10
 r3_right_k:
-    x: 245.03
-    'y': -19
+    x: 246.03
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -1635,8 +1635,8 @@ r3_right_k:
             - 0
             - 10
 r3_right_l:
-    x: 264.03
-    'y': -19
+    x: 265.03
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -1678,8 +1678,8 @@ r3_right_l:
             - 0
             - 10
 r3_right_colon:
-    x: 283.03
-    'y': -19
+    x: 284.03
+    'y': -18
     r: 0
     meta:
         stagger: 0
@@ -1721,8 +1721,8 @@ r3_right_colon:
             - 0
             - 10
 r4_right_b:
-    x: 197
-    'y': -38
+    x: 198
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1765,8 +1765,8 @@ r4_right_b:
             - 0
             - 0
 r4_right_n:
-    x: 216
-    'y': -38
+    x: 217
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1809,8 +1809,8 @@ r4_right_n:
             - 0
             - 10
 r4_right_m:
-    x: 235
-    'y': -38
+    x: 236
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1853,8 +1853,8 @@ r4_right_m:
             - 0
             - 10
 r4_right_comma:
-    x: 254
-    'y': -38
+    x: 255
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1897,8 +1897,8 @@ r4_right_comma:
             - 0
             - 10
 r4_right_peroid:
-    x: 273
-    'y': -38
+    x: 274
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1941,8 +1941,8 @@ r4_right_peroid:
             - 0
             - 10
 r4_right_slash:
-    x: 292
-    'y': -38
+    x: 293
+    'y': -37
     r: 0
     meta:
         stagger: 0
@@ -1985,8 +1985,8 @@ r4_right_slash:
             - 0
             - 10
 r5_right_left_arrow:
-    x: 254
-    'y': -57
+    x: 255
+    'y': -56
     r: 0
     meta:
         stagger: 0
@@ -2032,8 +2032,8 @@ r5_right_left_arrow:
             - 0
             - 0
 r5_right_down_arrow:
-    x: 273.000001
-    'y': -57
+    x: 274.000001
+    'y': -56
     r: 0
     meta:
         stagger: 0
@@ -2082,8 +2082,8 @@ r5_right_down_arrow:
             - 0
             - 10
 r5_right_right_arrow:
-    x: 292
-    'y': -57
+    x: 293
+    'y': -56
     r: 0
     meta:
         stagger: 0
@@ -2129,8 +2129,8 @@ r5_right_right_arrow:
             - 0
             - 10
 thumbfan_right_space:
-    x: 179.5
-    'y': -60.8
+    x: 180.5
+    'y': -59.8
     r: -60
     meta:
         stagger: 0
@@ -2189,8 +2189,8 @@ thumbfan_right_space:
             - 0
             - 0
 thumbfan_right_raise:
-    x: 207.1
-    'y': -59
+    x: 208.1
+    'y': -58
     r: 7
     meta:
         stagger: 0

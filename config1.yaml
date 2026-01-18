@@ -7,8 +7,8 @@ units:
   $default_height: u
   # KiCAD places the PCB in the middle of nowhere to start with.
   # These variables give a starting place for later shifts.
-  starting_x: 0
-  starting_y: 0
+  starting_x: 1
+  starting_y: 1
 
 points:
   zones:
@@ -131,7 +131,7 @@ points:
         left_arrow:
         down_arrow:
           key:
-            shift: [0.000001, 0]
+            shift: [0.000001, 0] # to fix silly bug that idk
         right_arrow:
         
     thumbfan_right:

@@ -190,4 +190,3 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
-

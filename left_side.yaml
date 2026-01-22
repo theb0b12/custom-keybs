@@ -90,66 +90,6 @@ points:
             rotate: 60
             shift: [0.33kx, -0.2ky]
 
-    
-
-  # right side
-    r2_right:
-      anchor:
-        shift: [starting_x+200, starting_y]
-      columns:
-        y:
-        u:
-        i:
-        o:
-        p:
-        backspace:
-
-
-    r3_right:
-      anchor:
-        shift: [starting_x+200+0.37kx, starting_y-ky]
-      columns:
-        h:
-        j:
-        k:
-        l:
-        colon:
-    
-    r4_right:
-      anchor:
-        shift: [starting_x+197, starting_y-2ky]
-      columns:
-        b:
-        n:
-        m:
-        comma:
-        peroid:
-        slash:
-    
-    r5_right:
-      anchor:
-        shift: [starting_x+216+2kx, starting_y-3ky]
-      columns:
-        left_arrow:
-        down_arrow:
-          key:
-            shift: [0.000001, 0] # to fix silly bug that idk
-        right_arrow:
-        
-    thumbfan_right:
-      anchor:
-        shift: [starting_x+9.5ky, starting_y-3ky]
-      columns:
-        space:
-          key:
-            width: 1.5kx
-            rotate: -60
-            shift: [-1, -0.2ky]
-        raise:
-          key:
-            shift: [0.4kx, -2]
-            rotate: 7
-
 outlines:
   raw:
     - what: rectangle
@@ -162,6 +102,15 @@ outlines:
     - what: rectangle
       where: [thumbfan_space]
       size: [kx*1.5, ky]
+    - what: rectangle
+      where: [r5_lctrl]
+      size: [kx*1.25, ky-0.01]
+    - what: rectangle
+      where: [r4_lshift]
+      size: [kx*1.75, ky-0.01]
+    - what: rectangle
+      where: [r3_tab]
+      size: [kx*1.25, ky-0.01]
       fillet: 2
   board:
     - what: polygon
@@ -184,7 +133,7 @@ outlines:
         - ref: r5_super
           shift: [0.5px, -0.5py]
         - ref: r5_lctrl
-          shift: [-0.5px, -0.5py]
+          shift: [-0.6px, -0.5py]
       fillet: 3
   combo:
     - name: board

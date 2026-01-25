@@ -9,8 +9,8 @@ units:
   $default_height: u
   # KiCAD places the PCB in the middle of nowhere to start with.
   # These variables give a starting place for later shifts.
-  starting_x: 1
-  starting_y: 1
+  starting_x: 100
+  starting_y: -100
 
 points:
   zones:
@@ -139,3 +139,55 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+pcbs:
+  smth:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      nicenano:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: r2_t
+          shift: [2kx, -0.32ky]
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: r3_g
+        params:
+          reversible: true
+        adjust:
+          shift: [1.6kx, -.5ky]
+          rotate: 90
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: r3_g
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [2.45kx, -.5ky]
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where: r3_g
+        params:
+          reversible: true
+        adjust:
+          shift: [2.45kx, -1.1ky]
+          rotate: 90

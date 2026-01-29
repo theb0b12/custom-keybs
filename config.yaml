@@ -208,14 +208,14 @@ pcbs:
         outline: board
     footprints:
       choc_hotswap:
-        what: ergogen/footprints/ceoloide/switch_choc_v1_v2
+        what: ceoloide/switch_choc_v1_v2
         where: true
         params:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
       diode:
-        what: diode
+        what: ceoloide/smd
         where: true
         params:
           from: "{{colrow}}"
@@ -223,13 +223,13 @@ pcbs:
         adjust:
           shift: [0, -5]
       nicenano:
-        what: ergogen/footprints/ceoloide/mcu_nice_nano
+        what: ceoloide/mcu_nice_nano
         where:
           ref: r2_t
           shift: [2kx, -0.32ky]
         
       battery_connector:
-        what: ergogen/footprints/ceoloide/battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         where: r3_g
         params:
           reversible: true
@@ -237,7 +237,7 @@ pcbs:
           shift: [1.6kx, -.5ky]
           rotate: 90
       on_off_switch:
-        what: ergogen/footprints/ceoloide/power_switch_smd_side
+        what: ceoloide/power_switch_smd_side
         where: r3_g
         params:
           from: BAT_P
@@ -246,7 +246,7 @@ pcbs:
         adjust:
           shift: [2.45kx, -.5ky]
       reset_switch:
-        what: ergogen/footprints/ceoloide/reset_switch_tht_top
+        what: ceoloide/reset_switch_tht_top
         where: r3_g
         params:
           reversible: true

@@ -23,13 +23,31 @@ points:
           key:
             width: 1kx
             shift: [0.5kx, 0ky]
+            column_net: P0
+            row_net: P6
         q:
           key:
             spread: 1.5kx
+            column_net: P1
+            row_net: P6
         w:
+          key:
+            column_net: P2
+            row_net: P6
         e:
+          key:
+            column_net: P3
+            row_net: P6
         r:
+          key:
+            column_net: P4
+            row_net: P6
         t:
+          key:
+            column_net: P5
+            row_net: P6
+
+
         
     r3:
       anchor:
@@ -166,6 +184,7 @@ pcbs:
         where:
           ref: r2_t
           shift: [2kx, -0.32ky]
+        
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: r3_g

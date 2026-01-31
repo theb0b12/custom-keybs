@@ -25,6 +25,7 @@ points:
         o:
         p:
         backspace:
+        delete:
 
 
     r3_right:
@@ -36,6 +37,7 @@ points:
         k:
         l:
         colon:
+        quotes:
     
     r4_right:
       anchor:
@@ -46,11 +48,12 @@ points:
         m:
         comma:
         peroid:
+        up_arrow:
         slash:
     
     r5_right:
       anchor:
-        shift: [starting_x+216+2kx, starting_y-3ky]
+        shift: [starting_x+216+3kx, starting_y-3ky]
       columns:
         left_arrow:
         down_arrow:
@@ -84,30 +87,35 @@ outlines:
       where: [thumbfan_right_space]
       size: [kx*1.5, ky]
       fillet: 2
-  # board:
-  #   - what: polygon
-  #     operation: stack
-  #     points:
-  #       - ref: r2_esc
-  #         shift: [-0.52px, 0.5py]
-  #       - ref: r2_t
-  #         shift: [2.5px, 0.5py]
-  #       - ref: thumbfan_space
-  #         shift: [18*1.5, 18*-0.6]
-  #       - ref: thumbfan_space
-  #         shift: [18*-0.8,18*-0.6]
-  #       - ref: thumbfan_lower
-  #         shift: [-0.5px, -0.5py]
-  #       - ref: thumbfan_lower
-  #         shift: [-0.5px, 0]
-  #       - ref: r5_super
-  #         shift: [0.5px, 0]
-  #       - ref: r5_super
-  #         shift: [0.5px, -0.5py]
-  #       - ref: r5_lctrl
-  #         shift: [-0.5px, -0.5py]
-  #     fillet: 3
-  # combo:
-  #   - name: board
-  #   - operation: subtract
-  #     name: keys
+
+  board_right:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2_right_y
+          shift: [-0.5px, 0.5py]
+
+        - ref: r2_right_delete
+          shift: [0.6kx, 0.5py]
+
+        - ref: r5_right_right_arrow
+          shift: [0.6kx, -0.6ky]
+
+        - ref: thumbfan_right_raise
+          shift: [-0.5kx, -0.6ky]
+
+        - ref: thumbfan_right_space
+          shift: [0.9kx, -0.9ky]
+
+        - ref: thumbfan_right_space
+          shift: [-1.5kx, -0.8ky]
+          
+        - ref: r2_right_y
+          shift: [-2.5kx, 0.5ky]
+
+      fillet: 3
+
+  combo:
+    - name: board_right
+    - operation: subtract
+      name: keys

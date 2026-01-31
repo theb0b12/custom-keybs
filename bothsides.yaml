@@ -1,0 +1,268 @@
+units:
+  # kx and ky allow for easy- easi-er switching between MX and Choc.
+  kx: u
+  ky: u
+  px: kx + 2
+  py: ky + 2
+  # These variables allow for updating the previews on https://ergogen.ceoloide.com
+  $default_width: u
+  $default_height: u
+  # KiCAD places the PCB in the middle of nowhere to start with.
+  # These variables give a starting place for later shifts.
+  starting_x: 1
+  starting_y: 1
+
+points:
+  zones:
+    r2:
+      anchor:
+        shift: [starting_x, starting_y]
+      columns:
+        esc:
+          key:
+            width: 1kx
+            shift: [0.5kx, 0ky]
+            column_net: P0
+            row_net: P6
+        q:
+          key:
+            spread: 1.5kx
+            column_net: P1
+            row_net: P6
+        w:
+          key:
+            column_net: P2
+            row_net: P6
+        e:
+          key:
+            column_net: P3
+            row_net: P6
+        r:
+          key:
+            column_net: P4
+            row_net: P6
+        t:
+          key:
+            column_net: P5
+            row_net: P6
+
+
+        
+    r3:
+      anchor:
+        shift: [starting_x, starting_y-ky]
+      columns:
+        tab:
+          key:
+            width: 1.25kx
+            shift: [0.62kx, 0ky]
+            column_net: P0
+            row_net: P7
+        a:
+          key:
+            spread: 1.75kx
+            column_net: P1
+            row_net: P7
+        s:
+          key:
+            column_net: P2
+            row_net: P7
+        d:
+          key:
+              column_net: P3
+              row_net: P7
+        f:
+          key:
+              column_net: P4
+              row_net: P7
+        g:
+          key:
+                column_net: P5
+                row_net: P7
+
+    r4:
+      anchor:
+        shift: [starting_x, starting_y-2ky]
+      columns:
+        lshift:
+          key:
+            width: 1.75kx
+            shift: [0.87kx, 0ky]
+            column_net: P0
+            row_net: P8
+        z:
+          key:
+            spread: 2.25kx
+            column_net: P1
+            row_net: P8
+        x:
+          key:
+            column_net: P2
+            row_net: P8
+        c:
+          key:
+            column_net: P3
+            row_net: P8
+        v:
+          key:
+            column_net: P4
+            row_net: P8
+        b:
+          key:
+            column_net: P5
+            row_net: P8
+    r5:
+      anchor:
+        shift: [starting_x, starting_y-3ky]
+      columns:
+        lctrl:
+          key:
+            width: 1.25kx
+            shift: [0.62kx, 0ky]
+            column_net: P0
+            row_net: P9
+        super:
+          key:
+            spread: 1.25kx
+            width: 1.25kx
+            shift: [0.62kx, 0ky]
+            column_net: P1
+            row_net: P9
+    thumbfan:
+      anchor:
+        shift: [starting_x+5.8ky, starting_y-3ky]
+      columns:
+        lower:
+          key:
+            rotate: -7
+            shift: [0, -2]
+            column_net: P5
+            row_net: P9
+        space:
+          key:
+            width: 1.5kx
+            rotate: 60
+            shift: [0.33kx, -0.2ky]
+            column_net: P5
+            row_net: P9
+    # right side
+    r2_right:
+      anchor:
+        shift: [starting_x+200, starting_y]
+      columns:
+        y:
+        u:
+        i:
+        o:
+        p:
+        backspace:
+        delete:
+
+
+    r3_right:
+      anchor:
+        shift: [starting_x+200+0.37kx, starting_y-ky]
+      columns:
+        h:
+        j:
+        k:
+        l:
+        colon:
+        quotes:
+
+
+    
+    r4_right:
+      anchor:
+        shift: [starting_x+197, starting_y-2ky]
+      columns:
+        b:
+        n:
+        m:
+        comma:
+        peroid:
+        up_arrow:
+        slash:
+    
+    r5_right:
+      anchor:
+        shift: [starting_x+216+3kx, starting_y-3ky]
+      columns:
+        left_arrow:
+        down_arrow:
+          key:
+            shift: [0.000001, 0] # to fix silly bug that idk
+        right_arrow:
+        
+    thumbfan_right:
+      anchor:
+        shift: [starting_x+9.5ky, starting_y-3ky]
+      columns:
+        space:
+          key:
+            width: 1.5kx
+            rotate: -60
+            shift: [-1, -0.2ky]
+        raise:
+          key:
+            shift: [0.4kx, -2]
+            rotate: 7
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+    - what: rectangle
+      where: [thumbfan_right_space]
+      size: [kx*1.5, ky]
+    - what: rectangle
+      where: [thumbfan_space]
+      size: [kx*1.5, ky]
+    - what: rectangle
+      where: [r5_lctrl]
+      size: [kx*1.25, ky-0.01]
+    - what: rectangle
+      where: [r4_lshift]
+      size: [kx*1.75-0.1, ky]
+    - what: rectangle
+      where: [r3_tab]
+      size: [kx*1.25, ky-0.01]
+
+
+      fillet: 2
+
+  board_right:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2_right_y
+          shift: [-0.5px, 0.5py]
+
+        - ref: r2_right_delete
+          shift: [0.6kx, 0.5py]
+
+        - ref: r5_right_right_arrow
+          shift: [0.6kx, -0.6ky]
+
+        - ref: thumbfan_right_raise
+          shift: [-0.5kx, -0.6ky]
+
+        - ref: thumbfan_right_space
+          shift: [0.9kx, -0.9ky]
+
+        - ref: thumbfan_right_space
+          shift: [-1.5kx, -0.8ky]
+          
+        - ref: r2_right_y
+          shift: [-2.5kx, 0.5ky]
+
+      fillet: 3
+
+  combo:
+    - name: board_right
+    - operation: subtract
+      name: keys

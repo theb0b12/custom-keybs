@@ -253,3 +253,8 @@ pcbs:
         adjust:
           shift: [2.45kx, -1.1ky]
           rotate: 90
+          
+cases:
+  bottom:
+    - name: board
+      extrude: 1

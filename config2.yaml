@@ -1,0 +1,128 @@
+units:
+  # kx and ky allow for easy- easi-er switching between MX and Choc.
+  kx: u
+  ky: u
+  px: kx + 2
+  py: ky + 2
+  # These variables allow for updating the previews on https://ergogen.ceoloide.com
+  $default_width: u
+  $default_height: u
+  # KiCAD places the PCB in the middle of nowhere to start with.
+  # These variables give a starting place for later shifts.
+  starting_x: 1
+  starting_y: 1
+
+points:
+  zones:
+    # right side
+    r2right:
+      anchor:
+        shift: [starting_x+200, starting_y]
+      columns:
+        y:
+        u:
+        i:
+        o:
+        p:
+        backspace:
+        delete:
+      rows:
+        single:
+
+
+    r3right:
+      anchor:
+        shift: [starting_x+200+0.37kx, starting_y-ky]
+      columns:
+        h:
+        j:
+        k:
+        l:
+        colon:
+        quotes:
+      rows:
+        single:    
+    
+    r4right:
+      anchor:
+        shift: [starting_x+197, starting_y-2ky]
+      columns:
+        b:
+        n:
+        m:
+        comma:
+        peroid:
+        up_arrow:
+        slash:
+      rows:
+        single:
+    
+    r5right:
+      anchor:
+        shift: [starting_x+216+3kx, starting_y-3ky]
+      columns:
+        larrow:
+        darrow:
+        rarrow:
+      rows:
+        single:
+        
+    thumbfanright:
+      anchor:
+        shift: [starting_x+9.5ky, starting_y-3ky]
+      columns:
+        space:
+          key:
+            width: 1.5kx
+            rotate: -60
+            shift: [-1, -0.2ky]
+        raise:
+          key:
+            shift: [0.4kx, -2]
+            rotate: 7
+      rows:
+        single:
+          
+outlines:
+
+  keys:
+    - what: rectangle
+      where: true
+      size: [kx-0.5,ky-0.5]
+    - what: rectangle
+      where: [thumbfanright_space_single]
+      size: [kx*1.5, ky]
+      fillet: 2
+
+  board_right:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2right_delete_single
+          shift: [0.5px, 0.5py]
+        - ref: r2right_delete_single
+          shift: [0.5px, -3ky - 0.5py]
+        - ref: r5right_larrow_single
+          shift: [-0.5px, -0.5py]
+        - ref: r5right_larrow_single
+          shift: [-0.5px, 0]
+        - ref: thumbfanright_raise_single
+          shift: [0.5px, 0]
+        - ref: thumbfanright_raise_single
+          shift: [0.5px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [0.25kx + 0.5px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [-0.25kx - 0.5px, -0.5py]
+        - 
+          orient: 60
+          shift: [0, 55]
+        - ref: r2right_y_single
+          shift: [-1kx - 0.5px, 0.5py]
+
+      fillet: 3
+
+  combo:
+    - name: board_right
+    - operation: subtract
+      name: keys

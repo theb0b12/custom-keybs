@@ -202,16 +202,12 @@ points:
           key:
             width: 1.5kx
             rotate: -60
-            shift: [-1, -0.2ky]
+            shift: [0.5, -0.2ky]
         raise:
           key:
             shift: [0.4kx, -2]
             rotate: 7
 outlines:
-  raw:
-    - what: rectangle
-      where: true
-      size: [kx, ky]
   keys:
     - what: rectangle
       where: true
@@ -231,38 +227,9 @@ outlines:
     - what: rectangle
       where: [r3_tab]
       size: [kx*1.25, ky-0.01]
+    - what: rectangle
+      where: [r5_super]
+      size: [kx*1.25-0.01, ky-0.01]
 
 
       fillet: 2
-
-  board_right:
-    - what: polygon
-      operation: stack
-      points:
-        - ref: r2_right_y
-          shift: [-0.5px, 0.5py]
-
-        - ref: r2_right_delete
-          shift: [0.6kx, 0.5py]
-
-        - ref: r5_right_right_arrow
-          shift: [0.6kx, -0.6ky]
-
-        - ref: thumbfan_right_raise
-          shift: [-0.5kx, -0.6ky]
-
-        - ref: thumbfan_right_space
-          shift: [0.9kx, -0.9ky]
-
-        - ref: thumbfan_right_space
-          shift: [-1.5kx, -0.8ky]
-          
-        - ref: r2_right_y
-          shift: [-2.5kx, 0.5ky]
-
-      fillet: 3
-
-  combo:
-    - name: board_right
-    - operation: subtract
-      name: keys

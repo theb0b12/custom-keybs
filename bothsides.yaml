@@ -231,6 +231,9 @@ outlines:
     - what: rectangle
       where: [r3_tab]
       size: [kx*1.25, ky-0.01]
+    - what: rectangle
+      where: [r5_super]
+      size: [kx*1.25-0.01, ky-0.01]
 
 
       fillet: 2

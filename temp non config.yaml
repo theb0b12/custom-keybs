@@ -9,11 +9,15 @@ units:
   $default_height: u
   # KiCAD places the PCB in the middle of nowhere to start with.
   # These variables give a starting place for later shifts.
-  starting_x: 1
-  starting_y: 1
+  starting_x: 100
+  starting_y: -100
+
+meta:
+  engine: 4.1.0
 
 points:
   zones:
+  # left side
     r2:
       anchor:
         shift: [starting_x, starting_y]
@@ -128,6 +132,7 @@ points:
             shift: [0.62kx, 0ky]
             column_net: P1
             row_net: P9
+
     thumbfan:
       anchor:
         shift: [starting_x+5.8ky, starting_y-3ky]
@@ -145,77 +150,16 @@ points:
             shift: [0.33kx, -0.2ky]
             column_net: P5
             row_net: P9
-            
-    # right side
-    r2_right:
-      anchor:
-        shift: [starting_x+200, starting_y]
-      columns:
-        y:
-        u:
-        i:
-        o:
-        p:
-        backspace:
-        delete:
 
-
-    r3_right:
-      anchor:
-        shift: [starting_x+200+0.37kx, starting_y-ky]
-      columns:
-        h:
-        j:
-        k:
-        l:
-        colon:
-        quotes:
-
-
-    
-    r4_right:
-      anchor:
-        shift: [starting_x+197, starting_y-2ky]
-      columns:
-        b:
-        n:
-        m:
-        comma:
-        peroid:
-        up_arrow:
-        slash:
-    
-    r5_right:
-      anchor:
-        shift: [starting_x+216+3kx, starting_y-3ky]
-      columns:
-        left_arrow:
-        down_arrow:
-          key:
-            shift: [0.000001, 0] # to fix silly bug that idk
-        right_arrow:
-        
-    thumbfan_right:
-      anchor:
-        shift: [starting_x+9.5ky, starting_y-3ky]
-      columns:
-        space:
-          key:
-            width: 1.5kx
-            rotate: -60
-            shift: [0.5, -0.2ky]
-        raise:
-          key:
-            shift: [0.4kx, -2]
-            rotate: 7
 outlines:
+  raw:
+    - what: rectangle
+      where: true
+      size: [kx, ky]
   keys:
     - what: rectangle
       where: true
       size: [kx-0.5,ky-0.5]
-    - what: rectangle
-      where: [thumbfan_right_space]
-      size: [kx*1.5, ky]
     - what: rectangle
       where: [thumbfan_space]
       size: [kx*1.5, ky]
@@ -224,13 +168,88 @@ outlines:
       size: [kx*1.25, ky-0.01]
     - what: rectangle
       where: [r4_lshift]
-      size: [kx*1.75-0.1, ky]
+      size: [kx*1.75, ky-0.01]
     - what: rectangle
       where: [r3_tab]
       size: [kx*1.25, ky-0.01]
-    - what: rectangle
-      where: [r5_super]
-      size: [kx*1.25-0.01, ky-0.01]
-
-
       fillet: 2
+  board:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2_esc
+          shift: [-0.52px, 0.5py]
+        - ref: r2_t
+          shift: [2.5px, 0.5py]
+        - ref: thumbfan_space
+          shift: [18*1.5, 18*-0.6]
+        - ref: thumbfan_space
+          shift: [18*-0.8,18*-0.6]
+        - ref: thumbfan_lower
+          shift: [-0.5px, -0.5py]
+        - ref: thumbfan_lower
+          shift: [-0.5px, 0]
+        - ref: r5_super
+          shift: [0.5px, 0]
+        - ref: r5_super
+          shift: [0.5px, -0.5py]
+        - ref: r5_lctrl
+          shift: [-0.6px, -0.5py]
+      fillet: 3
+  combo:
+    - name: board
+    - operation: subtract
+      name: keys
+pcbs:
+  smth:
+    template: kicad8
+    outlines:
+      main:
+        outline: board
+    footprints:
+      choc_hotswap:
+        what: ceoloide/switch_choc_v1_v2
+        where: true
+        params:
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: ceoloide/smd
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
+      nicenano:
+        what: ceoloide/mcu_nice_nano
+        where:
+          ref: r2_t
+          shift: [2kx, -0.32ky]
+        
+      battery_connector:
+        what: ceoloide/battery_connector_jst_ph_2
+        where: r3_g
+        params:
+          reversible: true
+        adjust:
+          shift: [1.6kx, -.5ky]
+          rotate: 90
+      on_off_switch:
+        what: ceoloide/power_switch_smd_side
+        where: r3_g
+        params:
+          from: BAT_P
+          to: RAW
+          reversible: true
+        adjust:
+          shift: [2.45kx, -.5ky]
+      reset_switch:
+        what: ceoloide/reset_switch_tht_top
+        where: r3_g
+        params:
+          reversible: true
+        adjust:
+          shift: [2.45kx, -1.1ky]
+          rotate: 90

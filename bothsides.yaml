@@ -202,16 +202,12 @@ points:
           key:
             width: 1.5kx
             rotate: -60
-            shift: [-1, -0.2ky]
+            shift: [0.5, -0.2ky]
         raise:
           key:
             shift: [0.4kx, -2]
             rotate: 7
 outlines:
-  raw:
-    - what: rectangle
-      where: true
-      size: [kx, ky]
   keys:
     - what: rectangle
       where: true

@@ -10,7 +10,7 @@
   )
   (paper "A3")
   (title_block
-    (title "smth")
+    (title "left_pcb")
     (date "2026-02-01")
     (rev "v1.0.0")
     (company "Unknown")

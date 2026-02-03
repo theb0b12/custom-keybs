@@ -9,203 +9,180 @@ units:
   $default_height: u
   # KiCAD places the PCB in the middle of nowhere to start with.
   # These variables give a starting place for later shifts.
-  starting_x: 100
+  starting_x: -50
   starting_y: -100
-
-meta:
-  engine: 4.1.0
 
 points:
   zones:
-  # left side
-    r2:
+    # right side
+    r2right:
       anchor:
-        shift: [starting_x, starting_y]
+        shift: [starting_x+200, starting_y]
       columns:
-        esc:
-          key:
-            width: 1kx
-            shift: [0.5kx, 0ky]
-            column_net: P0
-            row_net: P6
-        q:
-          key:
-            spread: 1.5kx
-            column_net: P1
-            row_net: P6
-        w:
-          key:
-            column_net: P2
-            row_net: P6
-        e:
-          key:
-            column_net: P3
-            row_net: P6
-        r:
-          key:
-            column_net: P4
-            row_net: P6
-        t:
-          key:
-            column_net: P5
-            row_net: P6
+        y:
+        u:
+        i:
+        o:
+        p:
+        backspace:
+        delete:
+      rows:
+        single:
 
 
-        
-    r3:
+    r3right:
       anchor:
-        shift: [starting_x, starting_y-ky]
+        shift: [starting_x+200+0.37kx, starting_y-ky]
       columns:
-        tab:
+        h:
+        j:
+        k:
+        l:
+        colon:
+        quotes:
           key:
-            width: 1.25kx
-            shift: [0.62kx, 0ky]
-            column_net: P0
-            row_net: P7
-        a:
-          key:
-            spread: 1.75kx
-            column_net: P1
-            row_net: P7
-        s:
-          key:
-            column_net: P2
-            row_net: P7
-        d:
-          key:
-              column_net: P3
-              row_net: P7
-        f:
-          key:
-              column_net: P4
-              row_net: P7
-        g:
-          key:
-                column_net: P5
-                row_net: P7
-
-    r4:
+            shift: [0.25kx, 0]
+      rows:
+        single:    
+    
+    r4right:
       anchor:
-        shift: [starting_x, starting_y-2ky]
+        shift: [starting_x+197, starting_y-2ky]
       columns:
-        lshift:
-          key:
-            width: 1.75kx
-            shift: [0.87kx, 0ky]
-            column_net: P0
-            row_net: P8
-        z:
-          key:
-            spread: 2.25kx
-            column_net: P1
-            row_net: P8
-        x:
-          key:
-            column_net: P2
-            row_net: P8
-        c:
-          key:
-            column_net: P3
-            row_net: P8
-        v:
-          key:
-            column_net: P4
-            row_net: P8
         b:
-          key:
-            column_net: P5
-            row_net: P8
-    r5:
+        n:
+        m:
+        comma:
+        peroid:
+        up_arrow:
+        slash:
+      rows:
+        single:
+    
+    r5right:
       anchor:
-        shift: [starting_x, starting_y-3ky]
+        shift: [starting_x+216+3kx, starting_y-3ky]
       columns:
-        lctrl:
-          key:
-            width: 1.25kx
-            shift: [0.62kx, 0ky]
-            column_net: P0
-            row_net: P9
-        super:
-          key:
-            spread: 1.25kx
-            width: 1.25kx
-            shift: [0.62kx, 0ky]
-            column_net: P1
-            row_net: P9
-
-    thumbfan:
+        larrow:
+        darrow:
+        rarrow:
+      rows:
+        single:
+        
+    thumbfanright:
       anchor:
-        shift: [starting_x+5.8ky, starting_y-3ky]
+        shift: [starting_x+9.5ky, starting_y-3ky]
       columns:
-        lower:
-          key:
-            rotate: -7
-            shift: [0, -2]
-            column_net: P5
-            row_net: P9
         space:
           key:
             width: 1.5kx
-            rotate: 60
-            shift: [0.33kx, -0.2ky]
-            column_net: P5
-            row_net: P9
-
+            rotate: -60
+            shift: [-1, -0.2ky]
+        raise:
+          key:
+            shift: [0.4kx, -2]
+            rotate: 7
+      rows:
+        single:
+          
 outlines:
-  raw:
-    - what: rectangle
-      where: true
-      size: [kx, ky]
+
   keys:
     - what: rectangle
       where: true
       size: [kx-0.5,ky-0.5]
     - what: rectangle
-      where: [thumbfan_space]
+      where: [r3right_quotes_single]
+      size: [kx*1.4, ky]
+    - what: rectangle
+      where: [thumbfanright_space_single]
       size: [kx*1.5, ky]
-    - what: rectangle
-      where: [r5_lctrl]
-      size: [kx*1.25, ky-0.01]
-    - what: rectangle
-      where: [r4_lshift]
-      size: [kx*1.75, ky-0.01]
-    - what: rectangle
-      where: [r3_tab]
-      size: [kx*1.25, ky-0.01]
+
       fillet: 2
-  board:
+
+  board_right:
     - what: polygon
       operation: stack
       points:
-        - ref: r2_esc
-          shift: [-0.52px, 0.5py]
-        - ref: r2_t
-          shift: [2.5px, 0.5py]
-        - ref: thumbfan_space
-          shift: [18*1.5, 18*-0.6]
-        - ref: thumbfan_space
-          shift: [18*-0.8,18*-0.6]
-        - ref: thumbfan_lower
+        - ref: r2right_delete_single
+          shift: [0.5px, 0.5py]
+        - ref: r2right_delete_single
+          shift: [0.5px, -3ky - 0.5py]
+        - ref: r5right_larrow_single
           shift: [-0.5px, -0.5py]
-        - ref: thumbfan_lower
+        - ref: r5right_larrow_single
           shift: [-0.5px, 0]
-        - ref: r5_super
+        - ref: thumbfanright_raise_single
           shift: [0.5px, 0]
-        - ref: r5_super
+        - ref: thumbfanright_raise_single
           shift: [0.5px, -0.5py]
-        - ref: r5_lctrl
-          shift: [-0.6px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [0.25kx + 0.5px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [-0.25kx - 0.5px, -0.5py]
+        - 
+          orient: 60
+          shift: [0, 55]
+        - ref: r2right_y_single
+          shift: [-1kx - 0.5px, 0.5py]
+
       fillet: 3
+
   combo:
-    - name: board
+    - name: board_right
     - operation: subtract
       name: keys
+
+  xlBoard:
+    - what: polygon
+      operation: stack
+      points:
+        - ref: r2right_delete_single
+          shift: [0.5px, 0.5py]
+        - ref: r2right_delete_single
+          shift: [0.5px, -3ky - 0.5py]
+        - ref: r5right_larrow_single
+          shift: [-0.5px, -0.5py]
+        - ref: r5right_larrow_single
+          shift: [-0.5px, 0]
+        - ref: thumbfanright_raise_single
+          shift: [0.5px, 0]
+        - ref: thumbfanright_raise_single
+          shift: [0.5px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [0.25kx + 0.5px, -0.5py]
+        - ref: thumbfanright_space_single
+          shift: [-0.25kx - 0.5px, -0.5py]
+        - 
+          orient: 60
+          shift: [0, 55]
+        - ref: r2right_y_single
+          shift: [-1kx - 0.5px, 0.5py]
+
+      fillet: 3
+
+  xlBoard_expanded:
+    - what: outline
+      name: xlBoard
+      expand: 2
+
+  wall_outline:
+    - name: xlBoard_expanded
+    - operation: subtract
+      name: board_right
+  switch_plate:
+    - name: xlBoard_expanded
+    - operation: subtract
+      name: keys
+
 pcbs:
-  smth:
+  right_pcb:
     template: kicad8
+
     outlines:
       main:
-        outline: board
+        outline: board_right
+
     footprints:
       choc_hotswap:
         what: ceoloide/switch_choc_v1_v2
@@ -214,42 +191,70 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+
       diode:
-        what: ceoloide/smd
+        what: ceoloide/diode_tht_sod123
         where: true
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
           shift: [0, -5]
+
       nicenano:
         what: ceoloide/mcu_nice_nano
         where:
-          ref: r2_t
-          shift: [2kx, -0.32ky]
+          ref: r2right_y_single
+          shift: [-1kx, -0.32ky]
         
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
-        where: r3_g
-        params:
-          reversible: true
+        where: r2right_y_single
         adjust:
-          shift: [1.6kx, -.5ky]
-          rotate: 90
+          shift: [-1.1kx, -1.5ky]
+          rotate: 270
+      
+
       on_off_switch:
         what: ceoloide/power_switch_smd_side
-        where: r3_g
+        where: r4right_b_single
         params:
           from: BAT_P
           to: RAW
-          reversible: true
         adjust:
-          shift: [2.45kx, -.5ky]
+          shift: [-1.7kx, 0]
+          rotate: 180
+
       reset_switch:
         what: ceoloide/reset_switch_tht_top
-        where: r3_g
-        params:
-          reversible: true
+        where: r4right_b_single
         adjust:
-          shift: [2.45kx, -1.1ky]
+          shift: [-1.7kx, -0.6ky]
           rotate: 90
+  
+
+cases:
+  bottom:
+    - name: board_right
+      extrude: 1
+
+  xlBottom:
+    - name: xlBoard_expanded
+      extrude: 1
+
+  wall:
+    - name: wall_outline
+      extrude: 10
+
+  case:
+    - what: case
+      name: xlBottom
+      operation: add
+    - what: case
+      name: wall
+      operation: add
+
+  plate:
+    - name: switch_plate
+      extrude: 1.6
+      

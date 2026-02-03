@@ -45,8 +45,7 @@ points:
             column_net: P6
       rows:
         single:
-          key:
-            row_net: P7
+          row_net: P7
 
 
     r3right:
@@ -74,8 +73,7 @@ points:
             column_net: P5
       rows:
         single:
-          key:
-            row_net: P8
+          row_net: P8
     
     r4right:
       anchor:
@@ -122,8 +120,7 @@ points:
             column_net: P6
       rows:
         single:
-          key:
-            row_net: P10
+          row_net: P10
 
     thumbfanright:
       anchor:
@@ -148,8 +145,7 @@ points:
             column_net: P1
       rows:
         single:
-          key:
-            row_net: P11
+          row_net: P11
           
 outlines:
   raw:

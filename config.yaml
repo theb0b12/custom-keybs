@@ -54,40 +54,77 @@ points:
         shift: [starting_x, starting_y-ky]
       columns:
         h:
+          key:
+            column_net: P0
         j:
+          key:
+            column_net: P1
         k:
+          key:
+            column_net: P2
         l:
+          key:
+            column_net: P3
         colon:
+          key:
+            column_net: P4
         quotes:
           key:
             shift: [0.25kx, 0]
+            column_net: P5
       rows:
-        single:    
+        single:
+          key:
+            row_net: P8
     
     r4right:
       anchor:
         shift: [starting_x, starting_y-2ky]
       columns:
         b:
+          key:
+            column_net: P0
         n:
+          key:
+            column_net: P1
         m:
+          key:
+            column_net: P2
         comma:
+          key:
+            column_net: P3
         peroid:
+          key:
+            column_net: P4
         up_arrow:
+          key:
+            column_net: P5
         slash:
+          key:
+            column_net: P6
       rows:
         single:
+          key:
+            row_net: P9
     
     r5right:
       anchor:
         shift: [starting_x, starting_y-3ky]
       columns:
         larrow:
+          key:
+            column_net: P4
         darrow:
+          key:
+            column_net: P5
         rarrow:
+          key:
+            column_net: P6
       rows:
         single:
-        
+          key:
+            row_net: P10
+
     thumbfanright:
       anchor:
         shift: [starting_x+5.8ky, starting_y-3ky]
@@ -103,12 +140,16 @@ points:
             width: 1.5kx
             rotate: -60
             shift: [-1, -0.2ky]
+            column_net: P0
         raise:
           key:
             shift: [0.4kx, -2]
             rotate: 7
+            column_net: P1
       rows:
         single:
+          key:
+            row_net: P11
           
 outlines:
   raw:
@@ -185,6 +226,7 @@ pcbs:
           to: "{{colrow}}"
 
       diode:
+        what: ceoloide/smd
         what: ceoloide/smd
         where: true
         params:

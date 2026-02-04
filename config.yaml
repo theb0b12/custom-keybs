@@ -222,7 +222,7 @@ outlines:
     - operation: subtract
       name: keys
 pcbs:
-  smth:
+  left__side:
     template: kicad8
     outlines:
       main:
@@ -243,6 +243,8 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+        adjust:
+          rotate: 180
 
       diode:
         what: ceoloide/smd
@@ -256,15 +258,13 @@ pcbs:
         what: ceoloide/mcu_nice_nano
         where:
           ref: r2_t
-          shift: [2kx, -0.32ky]
+          shift: [1.5kx, -0.32ky]
         
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: r3_g
-        params:
-          reversible: true
         adjust:
-          shift: [1.6kx, -.5ky]
+          shift: [1.15kx, -.5ky]
           rotate: 90
       on_off_switch:
         what: ceoloide/power_switch_smd_side
@@ -272,14 +272,11 @@ pcbs:
         params:
           from: BAT_P
           to: RAW
-          reversible: true
         adjust:
-          shift: [2.45kx, -.5ky]
+          shift: [2.15kx, -.6ky]
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where: r3_g
-        params:
-          reversible: true
         adjust:
-          shift: [2.45kx, -1.1ky]
+          shift: [2.15kx, -1.3ky]
           rotate: 90

@@ -134,7 +134,7 @@ points:
             shift: ["0.4kx", -2]
       rows:
         single:
-          row_net: P11
+          row_net: P14
           
 outlines:
 
@@ -242,6 +242,7 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+          include_stabilizer_pad: false
 
       mx_hotswap:
         what: ceoloide/switch_mx
@@ -260,7 +261,7 @@ pcbs:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
+          shift: [0, -8]
 
       nicenano:
         what: ceoloide/mcu_nice_nano

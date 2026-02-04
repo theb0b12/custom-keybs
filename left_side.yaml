@@ -59,7 +59,7 @@ points:
         tab:
           key:
             width: 1.25kx
-            shift: [0.62kx, 0ky]
+            shift: [0.625kx, 0ky]
             column_net: P0
             row_net: P7
         a:
@@ -91,7 +91,7 @@ points:
         lshift:
           key:
             width: 1.75kx
-            shift: [0.87kx, 0ky]
+            shift: [0.875kx, 0ky]
             column_net: P0
             row_net: P8
         z:
@@ -122,7 +122,7 @@ points:
         lctrl:
           key:
             width: 1.25kx
-            shift: [0.62kx, 0ky]
+            shift: [0.625kx, 0ky]
             column_net: P0
             row_net: P9
         super:
@@ -162,39 +162,60 @@ outlines:
       size: [kx-0.5,ky-0.5]
     - what: rectangle
       where: [thumbfan_space]
-      size: [kx*1.5, ky]
+      size: [kx*1.5-0.5, ky-0.5]
     - what: rectangle
       where: [r5_lctrl]
-      size: [kx*1.25, ky-0.01]
+      size: [kx*1.25-0.5, ky-0.5]
     - what: rectangle
       where: [r4_lshift]
-      size: [kx*1.75, ky-0.01]
+      size: [kx*1.75-0.5, ky-0.5]
     - what: rectangle
       where: [r3_tab]
-      size: [kx*1.25, ky-0.01]
+      size: [kx*1.25-0.5, ky-0.5]
+      fillet: 2
+    - what: rectangle
+      where: [r5_super]
+      size: [1.25kx-0.5, ky-0.5]
       fillet: 2
   board:
     - what: polygon
       operation: stack
       points:
         - ref: r2_esc
-          shift: [-0.52px, 0.5py]
-        - ref: r2_t
-          shift: [2.5px, 0.5py]
-        - ref: thumbfan_space
-          shift: [18*1.5, 18*-0.6]
-        - ref: thumbfan_space
-          shift: [18*-0.8,18*-0.6]
-        - ref: thumbfan_lower
-          shift: [-0.5px, -0.5py]
+          shift: [-0.5px, 0.5py]
+        - ref: r5_lctrl
+          shift: [-0.625px, -0.5py]
+        - ref: r5_super
+          shift: [0.625px, -0.5py]
+        - ref: r5_super
+          shift: [0.625px, 0]
         - ref: thumbfan_lower
           shift: [-0.5px, 0]
-        - ref: r5_super
-          shift: [0.5px, 0]
-        - ref: r5_super
-          shift: [0.5px, -0.5py]
-        - ref: r5_lctrl
-          shift: [-0.6px, -0.5py]
+        - ref: thumbfan_lower
+          shift: [-0.5px, -0.5py]
+        - ref: thumbfan_space
+          shift: [-0.25kx - 0.5px, -0.5py]
+        - ref: thumbfan_space
+          shift: [0.25kx + 0.5px, -0.5py]
+        - 
+          orient: -60
+          shift: [0, 55]
+        - ref: r2_t
+          shift: [1.5kx + 0.5px, 0.5py]
+#        - ref: thumbfan_space
+#          shift: [18*1.5, 18*-0.6]
+#        - ref: thumbfan_space
+#          shift: [18*-0.8,18*-0.6]
+#        - ref: thumbfan_lower
+#          shift: [-0.5px, -0.5py]
+#        - ref: thumbfan_lower
+#          shift: [-0.5px, 0]
+#        - ref: r5_super
+#          shift: [0.5px, 0]
+#        - ref: r5_super
+#          shift: [0.5px, -0.5py]
+#        - ref: r5_lctrl
+#          shift: [-0.6px, -0.5py]
       fillet: 3
   combo:
     - name: board
@@ -208,28 +229,37 @@ pcbs:
         outline: board
     footprints:
       choc_hotswap:
-        what: ergogen/footprints/ceoloide/switch_choc_v1_v2
+        what: ceoloide/switch_choc_v1_v2
         where: true
         params:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+          include_stabilizer_pad: false
+      mx_hotswap:
+        what: ceoloide/switch_mx
+        where: true
+        params:
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
       diode:
-        what: diode
+        what: ceoloide/smd
         where: true
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
+          shift: [0, -8]
       nicenano:
-        what: ergogen/footprints/ceoloide/mcu_nice_nano
+        what: ceoloide/mcu_nice_nano
         where:
           ref: r2_t
           shift: [2kx, -0.32ky]
         
       battery_connector:
-        what: ergogen/footprints/ceoloide/battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         where: r3_g
         params:
           reversible: true
@@ -237,7 +267,7 @@ pcbs:
           shift: [1.6kx, -.5ky]
           rotate: 90
       on_off_switch:
-        what: ergogen/footprints/ceoloide/power_switch_smd_side
+        what: ceoloide/power_switch_smd_side
         where: r3_g
         params:
           from: BAT_P
@@ -246,15 +276,10 @@ pcbs:
         adjust:
           shift: [2.45kx, -.5ky]
       reset_switch:
-        what: ergogen/footprints/ceoloide/reset_switch_tht_top
+        what: ceoloide/reset_switch_tht_top
         where: r3_g
         params:
           reversible: true
         adjust:
           shift: [2.45kx, -1.1ky]
           rotate: 90
-          
-cases:
-  bottom:
-    - name: board
-      extrude: 1

@@ -235,14 +235,23 @@ pcbs:
           hotswap: true
           from: "{{column_net}}"
           to: "{{colrow}}"
+          include_stabilizer_pad: false
+      mx_hotswap:
+        what: ceoloide/switch_mx
+        where: true
+        params:
+          hotswap: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+
       diode:
-        what: diode
+        what: ceoloide/smd
         where: true
         params:
           from: "{{colrow}}"
           to: "{{row_net}}"
         adjust:
-          shift: [0, -5]
+          shift: [0, -8]
       nicenano:
         what: ceoloide/mcu_nice_nano
         where:

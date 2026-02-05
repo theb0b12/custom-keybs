@@ -318,6 +318,11 @@ cases:
     - name: wall_outline
       extrude: 10
 
+  otherwall:
+    - name: wall_outline
+      extrude: 10
+
+
   case:
     - what: case
       name: xlBottom
@@ -328,5 +333,15 @@ cases:
 
   plate:
     - name: switch_plate
+      extrude: 1.3
+
+  plate_tester:
+    - what: case
+      name: otherwall
+    - name: switch_plate
       extrude: 2
+      operation: add
+    
+
+
       

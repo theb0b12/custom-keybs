@@ -320,7 +320,7 @@ cases:
 
   otherwall:
     - name: wall_outline
-      extrude: 10
+      extrude: 5
 
 
   case:
@@ -340,7 +340,7 @@ cases:
       name: otherwall
     - name: switch_plate
       extrude: 2
-      operation: add
+      shift: [0,0,5]
     
 
 

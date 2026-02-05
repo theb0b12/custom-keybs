@@ -221,6 +221,25 @@ outlines:
     - name: board
     - operation: subtract
       name: keys
+  switch_plate_keys:
+    - what: rectangle
+      where: true
+      size: [kx-3.5,ky-3.5]
+  xlBoard:
+    - what: outline
+      name: board
+      expand: 2
+
+  switch_plate:
+    - name: xlBoard
+    - operation: subtract
+      name: switch_plate_keys
+
+  wall_outline:
+    - name: xlBoard
+    - operation: subtract
+      name: board
+
 pcbs:
   left__side:
     template: kicad8
@@ -280,3 +299,14 @@ pcbs:
         adjust:
           shift: [2.15kx, -1.3ky]
           rotate: 90
+cases:
+  wall:
+    - name: wall_outline
+      extrude: 5
+  plate_tester:
+    - what: case
+      name: wall
+    - name: switch_plate
+      shift: [0,0,5]
+      extrude: 2
+      

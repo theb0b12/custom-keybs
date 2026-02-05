@@ -221,10 +221,20 @@ outlines:
     - name: xlBoard_expanded
     - operation: subtract
       name: board_right
+
+  switch_plate_keys:
+        - what: rectangle
+          where: true
+          size: [kx-3.5,ky-3.5]
+
+
+
   switch_plate:
     - name: xlBoard_expanded
     - operation: subtract
-      name: keys
+      name: switch_plate_keys
+
+  
 
 pcbs:
   right_pcb:
@@ -255,7 +265,7 @@ pcbs:
           rotate: 180
 
       diode:
-        what: ceoloide/smd
+        what: diode
         where: true
         params:
           from: "{{colrow}}"
@@ -318,5 +328,5 @@ cases:
 
   plate:
     - name: switch_plate
-      extrude: 1.6
+      extrude: 2
       

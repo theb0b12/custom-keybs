@@ -265,7 +265,7 @@ pcbs:
           rotate: 180
 
       diode:
-        what: diode
+        what: ceoloide/smd
         where: true
         params:
           from: "{{colrow}}"

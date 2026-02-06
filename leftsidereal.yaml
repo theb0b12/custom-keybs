@@ -12,6 +12,10 @@ units:
   starting_x: 100
   starting_y: -100
 
+  # Defaults to M2 Screws
+  screwSize: 1
+  standoffSize: 2.5
+
 meta:
   engine: 4.1.0
 
@@ -150,6 +154,8 @@ points:
             shift: [0.33kx, -0.2ky]
             column_net: P5
             row_net: P9
+    
+
 
 outlines:
   raw:
@@ -197,25 +203,11 @@ outlines:
           shift: [-0.25kx - 0.5px, -0.5py]
         - ref: thumbfan_space
           shift: [0.25kx + 0.5px, -0.5py]
-        - 
-          orient: -60
+        - orient: -60
           shift: [0, 55]
         - ref: r2_t
           shift: [1.5kx + 0.5px, 0.5py]
-#        - ref: thumbfan_space
-#          shift: [18*1.5, 18*-0.6]
-#        - ref: thumbfan_space
-#          shift: [18*-0.8,18*-0.6]
-#        - ref: thumbfan_lower
-#          shift: [-0.5px, -0.5py]
-#        - ref: thumbfan_lower
-#          shift: [-0.5px, 0]
-#        - ref: r5_super
-#          shift: [0.5px, 0]
-#        - ref: r5_super
-#          shift: [0.5px, -0.5py]
-#        - ref: r5_lctrl
-#          shift: [-0.6px, -0.5py]
+
       fillet: 3
   combo:
     - name: board
@@ -225,10 +217,89 @@ outlines:
     - what: rectangle
       where: true
       size: [kx-3.5,ky-3.5]
+
+
+  
+
+  
+  
+  mounting:
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [r5_super]
+          shift: [1kx, 0.3ky]
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [thumbfan_lower]
+          shift: [-1kx, 0.25ky]
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [r2_t]
+          shift: [0.7kx, 0.3ky]
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [r4_lshift]
+          shift: [-0.7kx, 0ky]
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [r4_b]
+          shift: [0.7kx, 0ky]
+      - what: circle
+        radius: screwSize
+        where:
+          ref: [r3_a]
+          shift: [-0.55kx, 0.4ky]
+  standoff:
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [r5_super]
+          shift: [1kx, 0.3ky]
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [thumbfan_lower]
+          shift: [-1kx, 0.25ky]
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [r2_t]
+          shift: [0.7kx, 0.3ky]
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [r4_lshift]
+          shift: [-0.7kx, 0ky]
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [r4_b]
+          shift: [0.7kx, 0ky]
+      - what: circle
+        radius: standoffSize
+        where:
+          ref: [r3_a]
+          shift: [-0.55kx, 0.4ky]
+  realBoard:
+    - name: board
+    - operation: subtract
+      name: switch_plate_keys
+    - operation: stack
+      name: standoff
+    - operation: stack
+      name: mounting
+
   xlBoard:
-    - what: outline
-      name: board
+    - name: board
       expand: 2
+    - name: mounting
+      operation: subtract
+
 
   switch_plate:
     - name: xlBoard
@@ -239,6 +310,8 @@ outlines:
     - name: xlBoard
     - operation: subtract
       name: board
+
+    
 
 pcbs:
   left__side:
@@ -300,6 +373,12 @@ pcbs:
           shift: [2.15kx, -1.3ky]
           rotate: 90
 cases:
+  _holes:
+    - name: mounting
+      extrude: 2
+  _standoffs:
+    - name: standoff
+      extrude: 2
   wall:
     - name: wall_outline
       extrude: 5
@@ -309,4 +388,15 @@ cases:
     - name: switch_plate
       shift: [0,0,5]
       extrude: 2
-      
+  case:
+    - what: case
+      name: _standoffs
+      operation: add
+    - what: case
+      name: _holes
+      operation: subtract
+    - what: case
+      name: wall
+      operation: add
+    - name: xlBoard
+      operation: add

@@ -374,32 +374,32 @@ pcbs:
           rotate: 90
       
       screwhole1:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
-          ref: [r3_a]
-          shift: [-0.55kx, 0.4ky]
+          ref: [r5_super]
+          shift: [1kx, 0.3ky]
       screwhole2:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [thumbfan_lower]
           shift: [-1kx, 0.25ky]
       screwhole3:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [r2_t]
           shift: [0.7kx, 0.3ky]
       screwhole4:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [r4_lshift]
           shift: [-0.7kx, 0ky]
       screwhole5:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [r4_b]
           shift: [0.7kx, 0ky]
       screwhole6:
-        what: mounting_hole_npth
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [r3_a]
           shift: [-0.55kx, 0.4ky]

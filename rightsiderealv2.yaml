@@ -189,7 +189,7 @@ outlines:
         radius: screwSize
         where:
           ref: [r2right_y_single]
-          shift: [-0.6kx, 0]
+          shift: [-0.5kx, 0]
       - what: circle
         radius: screwSize
         where:
@@ -221,7 +221,7 @@ outlines:
         radius: standoffSize
         where:
           ref: [r2right_y_single]
-          shift: [-0.6kx, 0]
+          shift: [-0.5kx, 0]
       - what: circle
         radius: standoffSize
         where:
@@ -288,7 +288,7 @@ outlines:
   
 
 pcbs:
-  right_pcb:
+  right_pcbv2:
     template: kicad8
 
     outlines:
@@ -316,7 +316,7 @@ pcbs:
           rotate: 180
 
       diode:
-        what: diode
+        what: ceoloide/smd
         where: true
         params:
           from: "{{colrow}}"
@@ -328,13 +328,13 @@ pcbs:
         what: ceoloide/mcu_nice_nano
         where:
           ref: r2right_y_single
-          shift: [-1kx, -0.32ky]
+          shift: [-1.1kx, -0.32ky]
         
       battery_connector:
         what: ceoloide/battery_connector_jst_ph_2
         where: r2right_y_single
         adjust:
-          shift: [-1.1kx, -1.5ky]
+          shift: [-1kx, -1.45ky]
           rotate: 270
       
 
@@ -345,15 +345,46 @@ pcbs:
           from: BAT_P
           to: RAW
         adjust:
-          shift: [-1.7kx, 0]
+          shift: [-1.62kx, 0.7ky]
           rotate: 180
 
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where: r4right_b_single
         adjust:
-          shift: [-1.7kx, -0.6ky]
+          shift: [-1.62kx, 1]
           rotate: 90
+      
+      screwhole1:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [r2right_y_single]
+          shift: [-0.5kx, 0]
+      screwhole2:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [r3right_h_single]
+          shift: [-0.9kx, -0.4ky]
+      screwhole3:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbfanright_raise_single]
+          shift: [0.65kx, 0.5ky]
+      screwhole4:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [r5right_larrow_single]
+          shift: [-0.65kx, 0.3ky]
+      screwhole5:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [r4right_slash_single]
+          shift: [0.55kx, 0]
+      screwhole6:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [r3right_quotes_single]
+          shift: [0.6kx, 0.45ky]
 
   
 

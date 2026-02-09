@@ -314,7 +314,7 @@ outlines:
     
 
 pcbs:
-  left__side:
+  left_pcbv2:
     template: kicad8
     outlines:
       main:
@@ -365,12 +365,12 @@ pcbs:
           from: BAT_P
           to: RAW
         adjust:
-          shift: [2.15kx, -.6ky]
+          shift: [2.3kx, -.3ky]
       reset_switch:
         what: ceoloide/reset_switch_tht_top
         where: r3_g
         adjust:
-          shift: [2.15kx, -1.3ky]
+          shift: [2.3kx, -0.95ky]
           rotate: 90
       
       screwhole1:

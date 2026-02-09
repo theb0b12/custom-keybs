@@ -14,6 +14,7 @@ units:
 
 points:
   zones:
+    # left side
     r2:
       anchor:
         shift: [starting_x, starting_y]
@@ -55,7 +56,7 @@ points:
         tab:
           key:
             width: 1.25kx
-            shift: [0.62kx, 0ky]
+            shift: [0.625kx, 0ky]
             column_net: P0
             row_net: P7
         a:
@@ -87,7 +88,7 @@ points:
         lshift:
           key:
             width: 1.75kx
-            shift: [0.87kx, 0ky]
+            shift: [0.875kx, 0ky]
             column_net: P0
             row_net: P8
         z:
@@ -118,7 +119,7 @@ points:
         lctrl:
           key:
             width: 1.25kx
-            shift: [0.62kx, 0ky]
+            shift: [0.625kx, 0ky]
             column_net: P0
             row_net: P9
         super:
@@ -128,100 +129,157 @@ points:
             shift: [0.62kx, 0ky]
             column_net: P1
             row_net: P9
+
     thumbfan:
       anchor:
         shift: [starting_x+5.8ky, starting_y-3ky]
       columns:
         lower:
           key:
-            rotate: -7
-            shift: [0, -2]
+            shift: [-10, -0.2ky]
             column_net: P5
             row_net: P9
         space:
           key:
             width: 1.5kx
-            rotate: 60
-            shift: [0.33kx, -0.2ky]
+   
+            shift: [0, -0.2ky]
             column_net: P5
             row_net: P9
             
     # right side
-    r2_right:
+    r2right:
       anchor:
-        shift: [starting_x+200, starting_y]
+        shift: ["starting_x + 200", "starting_y"]
       columns:
         y:
+          key:
+            column_net: P0
         u:
+          key:
+            column_net: P1
         i:
+          key:
+            column_net: P2
         o:
+          key:
+            column_net: P3
         p:
+          key:
+            column_net: P4
         backspace:
+          key:
+            column_net: P5
         delete:
+          key:
+            column_net: P6
+      rows:
+        single:
+          row_net: P7
 
-
-    r3_right:
+    r3right:
       anchor:
-        shift: [starting_x+200+0.37kx, starting_y-ky]
+        shift: ["starting_x + 200 + 0.37kx", "starting_y - ky"]
       columns:
         h:
+          key:
+            column_net: P0
         j:
+          key:
+            column_net: P1
         k:
+          key:
+            column_net: P2
         l:
+          key:
+            column_net: P3
         colon:
+          key:
+            column_net: P4
         quotes:
+          key:
+            column_net: P5
+            shift: ["0.25kx", 0]
+      rows:
+        single:
+          row_net: P8
 
-
-    
-    r4_right:
+    r4right:
       anchor:
-        shift: [starting_x+197, starting_y-2ky]
+        shift: ["starting_x + 197", "starting_y - 2ky"]
       columns:
         b:
-        n:
-        m:
-        comma:
-        peroid:
-        up_arrow:
-        slash:
-    
-    r5_right:
-      anchor:
-        shift: [starting_x+216+3kx, starting_y-3ky]
-      columns:
-        left_arrow:
-        down_arrow:
           key:
-            shift: [0.000001, 0] # to fix silly bug that idk
-        right_arrow:
-        
-    thumbfan_right:
+            column_net: P0
+        n: 
+          key: 
+            column_net: P1 
+        m: 
+          key: 
+            column_net: P2 
+        comma: 
+          key: 
+            column_net: P3
+        peroid:
+          key:
+            column_net: P4
+        up_arrow:
+          key:
+            column_net: P5
+        slash:
+          key:
+            column_net: P6
+      rows:
+        single:
+          row_net: P9
+
+    r5right:
       anchor:
-        shift: [starting_x+9.5ky, starting_y-3ky]
+        shift: ["starting_x + 216 + 3kx", "starting_y - 3ky"]
+      columns:
+        larrow:
+          key:
+            column_net: P4
+        darrow:
+          key:
+            column_net: P5
+        rarrow:
+          key:
+            column_net: P6
+      rows:
+        single:
+          row_net: P10
+
+    thumbfanright:
+      anchor:
+        shift: ["starting_x + 9.5ky", "starting_y - 3ky"]
       columns:
         space:
           key:
-            width: 1.5kx
-            rotate: -60
-            shift: [0.5, -0.2ky]
+            column_net: P0
+            width: "1.5kx"
+            shift: [0.5kx, "-0.2ky"]
         raise:
           key:
-            shift: [0.4kx, -2]
-            rotate: 7
+            column_net: P1
+            shift: [1kx, -0.2ky]
+      rows:
+        single:
+          row_net: P14
 outlines:
   keys:
     - what: rectangle
       where: true
       size: [kx-0.5,ky-0.5]
     - what: rectangle
-      where: [thumbfan_right_space]
+      where: [thumbfanright_space_single]
       size: [kx*1.5, ky]
     - what: rectangle
       where: [thumbfan_space]
       size: [kx*1.5, ky]
     - what: rectangle
       where: [r5_lctrl]
-      size: [kx*1.25, ky-0.01]
+      size: [kx*1.25-0.2, ky-0.01]
     - what: rectangle
       where: [r4_lshift]
       size: [kx*1.75-0.1, ky]
@@ -230,7 +288,10 @@ outlines:
       size: [kx*1.25, ky-0.01]
     - what: rectangle
       where: [r5_super]
-      size: [kx*1.25-0.01, ky-0.01]
+      size: [kx*1.25-0.1, ky-0.01]
+    - what: rectangle
+      where: [r3right_quotes_single]
+      size: [kx*1.5, ky-0.01]
 
 
       fillet: 2

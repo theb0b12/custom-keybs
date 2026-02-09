@@ -293,5 +293,3 @@ outlines:
       where: [r3right_quotes_single]
       size: [kx*1.5, ky-0.01]
 
-
-      fillet: 2

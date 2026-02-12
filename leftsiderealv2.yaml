@@ -412,7 +412,7 @@ cases:
       extrude: 2
   wall:
     - name: wall_outline
-      extrude: 5
+      extrude: 7
   plate_tester:
     - what: case
       name: wall

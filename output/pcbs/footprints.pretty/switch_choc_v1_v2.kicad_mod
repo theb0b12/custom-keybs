@@ -1,0 +1,272 @@
+(footprint "switch_choc_v1_v2"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "S5"
+		(at 0 -8.8 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "964d15ac-9169-4a7f-a75d-a9420378219b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Value" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(uuid "50f37b78-ca5c-45cb-abb3-7212209078e7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "ba15bd09-9602-4dac-91c3-797eeeaff8d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "B.Fab")
+		(hide yes)
+		(uuid "440b89bc-aa84-4721-94d3-573f52258557")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+	(fp_line
+		(start -1.5 3.7)
+		(end -2 4.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "645d6697-c3d0-4662-9786-18cfb783c53f")
+	)
+	(fp_line
+		(start -1.5 8.2)
+		(end -2 7.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec46f670-a6c7-45fa-999f-0d695a5c4063")
+	)
+	(fp_line
+		(start 0.8 3.7)
+		(end -1.5 3.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "41abcf80-fa1e-4738-831f-3f2577e02531")
+	)
+	(fp_line
+		(start 1.5 8.2)
+		(end -1.5 8.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e4e48505-61fc-4441-a600-55ae8d8b268e")
+	)
+	(fp_line
+		(start 2 7.7)
+		(end 1.5 8.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4cd9f1a5-4a03-4464-9815-e379a329a380")
+	)
+	(fp_line
+		(start 2 7.7)
+		(end 2 6.78)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a0a0910a-39aa-4df8-b0de-c581c603afcf")
+	)
+	(fp_line
+		(start 2.5 1.5)
+		(end 2.5 2.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f4804ac4-000b-4e6d-97ba-0a1e0928bacd")
+	)
+	(fp_line
+		(start 2.52 6.2)
+		(end 7 6.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db705581-b5e6-41f3-9196-81f452b41463")
+	)
+	(fp_line
+		(start 7 1.5)
+		(end 2.5 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d985dac4-62f8-46b6-b142-05f7e1d831c3")
+	)
+	(fp_line
+		(start 7 2)
+		(end 7 1.5)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3c4958aa-dc22-4f26-a99b-bf2363ec905b")
+	)
+	(fp_line
+		(start 7 6.2)
+		(end 7 5.6)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24b0e842-826e-4ae9-81c0-10ad20bb8046")
+	)
+	(fp_arc
+		(start 2 6.78)
+		(mid 2.139878 6.382304)
+		(end 2.52 6.2)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "25f4a8cc-2f79-453d-ba2e-997205653163")
+	)
+	(fp_arc
+		(start 2.5 2.22)
+		(mid 1.956518 3.312082)
+		(end 0.8 3.7)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cfb09b70-b005-4b35-a802-becddb8d31ed")
+	)
+	(pad "" np_thru_hole circle
+		(at -5.5 0)
+		(size 1.9 1.9)
+		(drill 1.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "180564e8-22c1-4e74-8695-1272fe47583d")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 5 5)
+		(drill 5)
+		(layers "*.Cu" "*.Mask")
+		(uuid "01486d5f-ad77-4703-aa56-4671b9f32cee")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 5.95)
+		(size 3 3)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "d23b95f9-e62e-4391-b158-ab5ec71043ea")
+	)
+	(pad "" np_thru_hole circle
+		(at 5 3.75 165)
+		(size 3 3)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
+		(uuid "23e6fea0-576d-45e7-9e99-6e99928f72b3")
+	)
+	(pad "" np_thru_hole circle
+		(at 5.5 0)
+		(size 1.9 1.9)
+		(drill 1.9)
+		(layers "*.Cu" "*.Mask")
+		(uuid "f01d6144-0275-4fb8-a6eb-0a25992a38e2")
+	)
+	(pad "1" smd rect
+		(at -3.275 5.95)
+		(size 2.6 2.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a34def20-d0fd-4551-926d-256e266370f6")
+	)
+	(pad "2" smd rect
+		(at 8.275 3.75)
+		(size 2.6 2.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "93823b93-b8db-4d3f-8673-a384d19614e7")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/Logan/Downloads/MBK Choc Low Profile Keycaps - 4564253/files/MBK_Keycap_-_1u.step"
+		(offset
+			(xyz 0 0 -9)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -180 -0 -0)
+		)
+	)
+	(model "C:/Users/Logan/Downloads/kailh-choc-low-profile-switch-1.snapshot.3/Kailh Choc Low Profile Switch.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "C:/Users/Logan/Downloads/kailh-low-profile-mechanical-keyboard-switch-1.snapshot.1/Kailh LP Choc Burnt Orange.STEP"
+		(offset
+			(xyz 0 0 -4.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -180 -90)
+		)
+	)
+)
